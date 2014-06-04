@@ -3,18 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Añadir</title>
-	<link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">
+	<!--<link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">-->
 	<link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
-	
-
-  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen"
-     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
-
+  	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" media="screen" href="../utilerias/css/bootstrap-datetimepicker.min.css">
 	<script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
-
-	 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
+	<script type="text/javascript" src="../utilerias/lib/jquery.js"></script>
 </head>
 <body>
 	<div class="container-fluid" background="red">
@@ -58,29 +52,20 @@
 				</article>
         <section>
 				<div id="datetimepicker" class="input-append date">
-      <input type="text"></input>
-      <span class="add-on">
-        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-      </span>
-    </div>
-    <script type="text/javascript"
-     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
-    </script> 
-    <script type="text/javascript"
-     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
-    </script>
-    <script type="text/javascript"
-     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
-    </script>
-    <script type="text/javascript">
-      $('#datetimepicker').datetimepicker({
-        format: 'dd/MM/yyyy hh:mm:ss',
-        language: 'pt-BR'
-      });
-    </script>
+<input type="text"></input>
+<span class="add-on">
+<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+</span>
+</div>
+<script type="text/javascript" src="../utilerias/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../utilerias/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../utilerias/js/bootstrap-datetimepicker-es.js"></script>
+<script type="text/javascript">
+$('#datetimepicker').datetimepicker({
+format: 'dd/MM/yyyy hh:mm:ss',
+language: 'pt-BR'
+});
+</script>
     </section>
 				<label>Descripción</label>
 				<textarea id="mensaje" name="mensaje" placeholder="Descripción..."></textarea>
@@ -105,9 +90,7 @@
 				</br></br>
 				<button id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
 			</section>
-
 		</section>
-		
 	</div>
 </body>
 </html>
