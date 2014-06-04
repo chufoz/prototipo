@@ -1,0 +1,109 @@
+	/*AUTORES:
+			Jesús Israel Aguirre Valle.*/
+	body{
+		background-color: (#BDBDBD);
+	}
+
+	button#guardar{
+		text-align: right !important;
+	}
+	input[type="text"]:hover{
+		border: 2px dashed #3D6BF5; 
+	}
+
+
+	input[type="text"]:focus{
+		border: 5px solid #4169e1; 
+	}
+
+	input[type="password"]:focus{
+		border: 5px solid #4169e1 !important; 
+	}
+
+	input#usuario{
+		width: 600px;
+		height: 40px;
+	}
+	input#asunto{
+		display: inline !important;
+	}
+	
+	/*Contenedores*/
+
+	 section#uno{
+		display: inline-block;
+	
+	}
+	section#form{
+		text-align: left !important;
+		margin-top: 30px;
+
+	}
+
+	section#uno, section#dos{
+		/*
+		Disposicion de los elemenetos inicial
+		display: block;
+		*/
+		display: inline-block;
+		vertical-align: top;
+	}
+	article#autocomplet{
+		display: inline-block;
+		vertical-align: top;
+	}
+		
+
+	
+	/*Identificadores*/
+
+	#cancelar:hover,#registrar:hover {
+    background: #31B404!important;
+    border: 3px solid #FF0040 !important;
+    color: #D7DF01!important;  
+} 
+
+	
+
+	#boton{
+		margin: 15px;
+	}
+
+
+	#img{
+		margin: -5px 0 20px 0;
+	}
+
+	#contenedor-derecho{
+		border: 2px dashed #000;
+		padding: 15px;
+		width: 600px !important;
+		height: 630px
+	}
+	#contenedor-izquierdo-prin{
+		margin-right: 5px; 
+		border: 2px dashed #000;
+		color: #FF4000;
+		font-size: 16.5px;
+		font-weight: bold;
+		text-align: justify;
+		padding: 15px;
+		width: 430px !important;
+		height: 630px;
+	}
+	#alerta {
+    max-width: 450px;
+    margin: 30px auto;
+    padding-bottom: 1%;
+    height: 30px;
+	}
+
+	/*Clases*/
+	.form{
+		margin-top: 77px;
+		text-align: left !important;
+	}
+	
+	
+	
+	
