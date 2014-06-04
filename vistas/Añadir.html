@@ -6,17 +6,17 @@
   <link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
   <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen"
-     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
-  
-
+  <link rel="stylesheet" type="text/css" media="screen" href="../utilerias/css/bootstrap-datetimepicker.min.css">
+ 
+  <script type="text/javascript" src="../utilerias/lib/bootstrap-datetimepicker.js">
+  </script>
 </head>
 <body>
-	<div class="container-fluid"  style="background:#BDBDBD">
+	<div class="container-fluid" id="principal" style="background:#FFF">
 		<section class="row" id="form">
 			<section class="col-md-12" id="uno" >
 				<article class="col-md-4" id="autocomplet">
-					<input type="text"autocomplete="on" placeholder="Ingresa un grupo" required>
+					<input type="text"autocomplete="on" placeholder="Ingresa un grupo" requiered>
 					
 					<label>Asunto</label><input id="asunto" type="text" placeholder="Ingrese un asunto" requiered>
 			
@@ -47,57 +47,71 @@
              			
 				</article>
 			</section>
-			<section class="row" id="dos" >
+      <section class="col-md-12" id="dos">
+			<section class="row" id="trs" >
 				        <article class="col-md-12" id="tareas">
 					             <label><h4>Tereas Relacionadas</h4> </label>
 				        </article>
-        <section class="col-md-12">
-          <article class="col-md-6" id"calini">
+      </section>
+        <section class="col-md-12" id="calendarios" >
+          <article class="col-md-6" id="calini">
 				      <div id="datetimepicker" class="input-append date">
-                  <input type="text"  placeholder="Fecha de Inicio"></input>
+                  <input type="text"  placeholder="Fecha de Inicio">
                     <span class="add-on">
                       <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
                     </span>
               </div>
-                    <script type="text/javascript"
-                    src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
-                    </script> 
-                    <script type="text/javascript"
-            src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
-                    </script>
-                    <script type="text/javascript"
-                  src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
-                    </script>
-                    <script type="text/javascript"
-                  src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
-                    </script>
+<script type="text/javascript" src="../utilerias/lib/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="../utilerias/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="../utilerias/lib/bootstrap-datetimepicker.min.js"></script>
+ <script type="text/javascript" src="../utilerias/js/bootstrap-datetimepicker-es.js"></script>
                     <script type="text/javascript">
                     $('#datetimepicker').datetimepicker({
                     format: 'dd/MM/yyyy hh:mm:ss',
-                    language: 'pt-BR'
+                    language: 'es'
+                     });
+                  </script>
+          </article>
+          <article class="col-md-6" id="calfin">
+              <div id="datetimepicker" class="input-append date">
+                  <input type="text"  placeholder="Fecha de Recordatorio">
+                    <span class="add-on">
+                      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                    </span>
+              </div>
+<script type="text/javascript" src="../utilerias/lib/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="../utilerias/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="../utilerias/lib/bootstrap-datetimepicker.min.js"></script>
+ <script type="text/javascript" src="../utilerias/js/bootstrap-datetimepicker-es.js"></script>
+                    <script type="text/javascript">
+                    $('#datetimepicker').datetimepicker({
+                    format: 'dd/MM/yyyy hh:mm:ss',
+                    language: 'es'
                      });
                   </script>
           </article>
         </section>
-      </section>
-      <article class="col-md-12">
+      <article class="col-md-10" id="des">
 				<label><h4>Descripción</h4></label>
 				<textarea id="mensaje" name="mensaje" placeholder="Descripción..."></textarea>
 			</article>
+      </section>
 			<section class="col-md-12" id="tres">
         <article class="col-md-4">
 				    <form>
-					     <input type="checkbox" name="delated" value="borrar">Delated Entity
-					     <input type="checkbox" name="read" value="leer">Read-Only to Other Users
-					     <input type="checkbox" name="private" value="privado">Private
+              <ul>
+               <li><input type="checkbox" name="check" value="borrar">Delated Entity</li>
+               <li><input type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
+               <li><input type="checkbox" name="check" value="privado">Private</li>
+              </ul>    
 				    </form>
 			   </article>
          <article class="col-md-4" id="alert">
 				    <label><h4>Alertas</h4></label>
 				        <form>
-					           <input type="radio" name="alta" value="alta">Alta
-					           <input type="radio" name="media" value="media">Media
-					           <input type="radio" name="ninguna" value="ninguna">Ninguna
+					           <input type="radio" name="radio" value="alta">Alta
+					           <input type="radio" name="radio" value="media">Media
+					           <input type="radio" name="radio" value="ninguna">Ninguna
 				        </form> 
         </article>
         <article class="col-md-4">
@@ -106,15 +120,9 @@
 				      <button id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
         </article>
 			</section>
-
-		</section>
-		
+	</section>	
 	</div>
-  </section>
-
-
-  <script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
-
-   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
+    <script type="text/javascript" src="../utilerias/lib/jquery.js"></script>
 </body>
 </html>
