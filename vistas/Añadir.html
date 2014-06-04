@@ -3,49 +3,60 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Añadir</title>
+<<<<<<< HEAD
 	<!--<link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">-->
 	<link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
   	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" media="screen" href="../utilerias/css/bootstrap-datetimepicker.min.css">
 	<script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
 	<script type="text/javascript" src="../utilerias/lib/jquery.js"></script>
+=======
+  <link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+  
+
+>>>>>>> 433dd8314c25e158f7062db33191d59ee3ed6286
 </head>
 <body>
-	<div class="container-fluid" background="red">
-		<section class="col-md-12" id="form">
-			<section class="row" id="uno" >
-				<article id="autocomplet">
+	<div class="container-fluid"  style="background:#BDBDBD">
+		<section class="row" id="form">
+			<section class="col-md-12" id="uno" >
+				<article class="col-md-4" id="autocomplet">
 					<input type="text"autocomplete="on" placeholder="Ingresa un grupo" required>
-						</br></br>
-					<input id="asunto" type="text" placeholder="Ingrese un asunto" requiered>
-				</br></br>
-					<input type="text" placeholder="Ingresa la Etiqueta" requiered>
-				</br></br>
+					
+					<label>Asunto</label><input id="asunto" type="text" placeholder="Ingrese un asunto" requiered>
+			
+					<label>Etiqueta</label><input type="text" placeholder="Ingresa la Etiqueta" requiered>
+			
 				</article>
-				<article id="propietario">
-					Propietario<input type="text" autocomplete="on" placeholder="Ingresa el propietario" requiered>
-						</br></br>
-					Asignado<input type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered>
-				</br></br>
+				<article class="col-md-4" id="propietario">
+					<label>Propietario</label><input type="text" autocomplete="on" placeholder="Ingresa el propietario" requiered>
+						
+					<label>Asignado</label><input type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered>
+				
 				</article>
-				<article id="prioridad">
-					    Prioridad <select id = "opcion">
+				<article class="col-md-4" id="prioridad">
+					   <label>Prioridad</label>  <select id = "opcion">
                				<option value = "alto">Alto</option>
                				<option value = "bajo">Bajo</option>
                				<option value = "critico">Critico</option>
               			 	<option value = "medio">Medio</option>
              			</select>
-             			</br></br>
-             			Estatus <select id = "opcion2">
+             		
+             			<label>Estatus</label> <select id = "opcion2">
                				<option value = "abierto">Abierto</option>
                				<option value = "cerrado">Cerrado</option>
                				<option value = "espera">En espera</option>
               			 	<option value = "opad">Revision Administrativa</option>
               			 	<option valeu = "opop">Revision Operativa</option>
              			</select>
-             			</br></br>
+             			
 				</article>
 			</section>
+<<<<<<< HEAD
 			<section id="dos" class="dos">
 				<article id="tareas">
 					<label><h4>Tereas Relacionadas</h4> </label>
@@ -68,29 +79,74 @@ language: 'pt-BR'
 </script>
     </section>
 				<label>Descripción</label>
+=======
+			<section class="row" id="dos" >
+				        <article class="col-md-12" id="tareas">
+					             <label><h4>Tereas Relacionadas</h4> </label>
+				        </article>
+        <section class="col-md-12">
+          <article class="col-md-6" id"calini">
+				      <div id="datetimepicker" class="input-append date">
+                  <input type="text"  placeholder="Fecha de Inicio"></input>
+                    <span class="add-on">
+                      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                    </span>
+              </div>
+                    <script type="text/javascript"
+                    src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+                    </script> 
+                    <script type="text/javascript"
+            src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+                    </script>
+                    <script type="text/javascript"
+                  src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+                    </script>
+                    <script type="text/javascript"
+                  src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+                    </script>
+                    <script type="text/javascript">
+                    $('#datetimepicker').datetimepicker({
+                    format: 'dd/MM/yyyy hh:mm:ss',
+                    language: 'pt-BR'
+                     });
+                  </script>
+          </article>
+        </section>
+      </section>
+      <article class="col-md-12">
+				<label><h4>Descripción</h4></label>
+>>>>>>> 433dd8314c25e158f7062db33191d59ee3ed6286
 				<textarea id="mensaje" name="mensaje" placeholder="Descripción..."></textarea>
-				</br></br>
-			</section>
-			<section id="3" class="3">
-				<form>
-					<input type="checkbox" name="delated" value="borrar">Delated Entity
-					<input type="checkbox" name="read" value="leer">Read-Only to Other Users
-					<input type="checkbox" name="private" value="privado">Private
-				</form>
-				</br></br>
-				<label><h4>Alertas</h4></label>
-				<form>
-					<input type="radio" name="alta" value="alta">Alta
-					<input type="radio" name="media" value="media">Media
-					<input type="radio" name="ninguna" value="ninguna">Ninguna
-				</form> 
-				<label><h4>Attach File</h4></label>
-				</br></br>
-				<button id="examinar" name="examinar" type="submit">Examinar</button>
-				</br></br>
-				<button id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
+			</article>
+			<section class="col-md-12" id="tres">
+        <article class="col-md-4">
+				    <form>
+					     <input type="checkbox" name="delated" value="borrar">Delated Entity
+					     <input type="checkbox" name="read" value="leer">Read-Only to Other Users
+					     <input type="checkbox" name="private" value="privado">Private
+				    </form>
+			   </article>
+         <article class="col-md-4" id="alert">
+				    <label><h4>Alertas</h4></label>
+				        <form>
+					           <input type="radio" name="alta" value="alta">Alta
+					           <input type="radio" name="media" value="media">Media
+					           <input type="radio" name="ninguna" value="ninguna">Ninguna
+				        </form> 
+        </article>
+        <article class="col-md-4">
+				    <label><h4>Attach File</h4></label>
+				      <button id="examinar" name="examinar" type="submit">Examinar</button>
+				      <button id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
+        </article>
 			</section>
 		</section>
 	</div>
+  </section>
+
+
+  <script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
+
+   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </body>
 </html>
