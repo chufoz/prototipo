@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Añadir</title>
-	<link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
+	<title>Prototipo</title>
+  <link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
   <link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="../utilerias/css/datepicker.css">
   <script type="text/javascript" src="../utilerias/lib/jquery.js" charset="UTF-8" ></script>
@@ -17,22 +17,14 @@
 			<section class="col-md-12" id="uno" >
 				<article class="col-md-4" id="autocomplet">
 					<input type="text" autocomplete="on" placeholder="Ingresa un grupo" requiered>
-</head>
-<body>
-	<div class="container-fluid" id="principal" style="background:#FFF">
-		<section class="row" id="form">
-			<section class="col-md-12" id="uno" >
-				<article class="col-md-4" id="autocomplet">
-					<input type="text"autocomplete="on" placeholder="Ingresa un grupo" requiered>
-					
 					<label>Asunto</label><input id="asunto" type="text" placeholder="Ingrese un asunto" requiered>
 					<label>Etiqueta</label><input type="text" placeholder="Ingresa la Etiqueta" requiered>
 				</article>
 				<article class="col-md-4" id="propietario">
-					<label>Propietario</label><input type="text" autocomplete="on" placeholder="Ingresa el propietario" requiered>
+					<label>Propietario</label>
+					<input type="text" autocomplete="on" placeholder="Ingresa el propietario" requiered>
 						
 					<label>Asignado</label><input type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered>
-				
 				</article>
 				<article class="col-md-4" id="prioridad">
 					   <label>Prioridad</label>  <select id = "opcion">
@@ -53,77 +45,50 @@
 				</article>
 			</section>
 
-      <section class="col-md-12" id="dos">
+     		<section class="col-md-12" id="dos">
 			<section class="row" id="trs" >
-      <section class="col-md-12" id="dos">
-			<section class="row" id="trs" >
-			<section id="dos" class="dos">
-				<article id="tareas">
-					<label><h4>Tereas Relacionadas</h4> </label>
+				<article class="col-md-12" id="tareas">
+					<label><h4>Tereas Relacionadas</h4></label>
 				</article>
-        <section>
-				<div id="datetimepicker" class="input-append date">
-<input type="text"></input>
-<span class="add-on">
-<i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-</span>
-</div>
-				        <article class="col-md-12" id="tareas">
-					             <label><h4>Tereas Relacionadas</h4> </label>
-				        </article>
-      </section>
-        <section class="col-md-12" id="calendarios" >
-          <article class="col-md-6" id="calini">
-               <label>Fecha</label><input class="wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD">
-				  </article>
-          <article class="col-md-6" id="calfin">
-                 <label>Recordatorio</label><input class="wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD">
-          </article>  
-        </section>
-      <article class="col-md-12" id="des">
-
-				      <div id="datetimepicker" class="input-append date">
-                  <input type="text"  placeholder="Fecha de Inicio">
-                    <span class="add-on">
-                      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-                    </span>
-          </article>
-          <article class="col-md-6" id="calfin">
-              <div id="datetimepicker" class="input-append date">
-                  <input type="text"  placeholder="Fecha de Recordatorio">
-                    <span class="add-on">
-                      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-                    </span>
-				<label><h4>Descripción</h4></label>
-				<textarea id="mensaje" name="mensaje" placeholder="Descripción..."></textarea>
-			</article>
-      </section>
+      		</section>
+        	<section class="col-md-12" id="calendarios" >
+          		<article class="col-md-6" id="calini">
+               		<label>Fecha</label><input class="wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD">
+				</article>
+          		<article class="col-md-6" id="calfin">
+                 	<label>Recordatorio</label><input class="wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD">
+          		</article>  
+        	</section>
+      			<article class="col-md-12" id="des">
+					<label><h4>Descripción</h4></label>
+					<textarea id="mensaje" name="mensaje" placeholder="Descripción..."></textarea>
+				</article>
+			</section>
 			<section class="col-md-12" id="tres">
-        <article class="col-md-4">
-				    <form>
-              <ul>
-               <li><input type="checkbox" name="check" value="borrar">Delated Entity</li>
-               <li><input type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
-               <li><input type="checkbox" name="check" value="privado">Private</li>
-              </ul>    
-				    </form>
-			   </article>
-         <article class="col-md-4" id="alert">
+        		<article class="col-md-4">
+				  <form>
+              	   <ul>
+               		<li><input type="checkbox" name="check" value="borrar">Delated Entity</li>
+               		<li><input type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
+               		<li><input type="checkbox" name="check" value="privado">Private</li>
+              	   </ul>    
+				  </form>
+				</article>
+         		<article class="col-md-4" id="alert">
 				    <label><h4>Alertas</h4></label>
 				        <form>
 					           <input type="radio" name="radio" value="alta">Alta
 					           <input type="radio" name="radio" value="media">Media
 					           <input type="radio" name="radio" value="ninguna">Ninguna
 				        </form> 
-        </article>
-        <article class="col-md-4">
+        		</article>
+       			<article class="col-md-4">
 				    <label><h4>Attach File</h4></label>
 				      <button id="examinar" name="examinar" type="submit">Examinar</button>
 				      <button id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
-        </article>
+        		</article>
 			</section>
-	</section>	
-
-	</div>
+		</section>		
+   </div>
 </body>
 </html>

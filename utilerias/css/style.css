@@ -1,16 +1,13 @@
 	/*AUTORES:
 			Jesús Israel Aguirre Valle.*/
-	h4{
-		margin: 22px 58px !important;
-	}
 
 	input[type="text"]:hover{
 		border: 2px dashed #3D6BF5;
 		
 	}
 	input{
-		width: 300px !important;
-		height: 35px !important;
+		width: 100px !important;
+		height: 30px !important;
 	}
 
 	input[type="text"]:focus{
@@ -19,7 +16,6 @@
 	article{
 		padding: 40px !important;
 		display: inline-block !important;
-		padding: 15px !important;
 	}
 	
 	/*Contenedores*/
@@ -38,8 +34,35 @@
     	-webkit-border-radius: 10px;
     	border-radius: 10px;
     	margin: 10px !important;
-    	margin: 5px !important;
+	}
+	/*Prototipo 2*/
+	article#art1, article#art2, article#art3{
+		display: block !important;
+		padding: 50px !important;
+	}
 
+	section#form2{
+		margin: 20px !important;
+		padding: 10px !important;
+		border:solid 5px #FAAC58;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		border-radius: 15px
+	}
+	section#izquierda, section#centro, section#derecha{
+    	border:double 7px #56b0ed;
+    	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	border-radius: 10px;
+    	margin: 10px !important;
+    	text-align: center !important;
+    	display: inline-block !important;
+	}
+	.col-md-4{
+		display: inline-block !important;
+		padding: 15px !important;
+		width: 300px !important;
+		height: 500px !important;
 	}
 		
 	/*Identificadores*/

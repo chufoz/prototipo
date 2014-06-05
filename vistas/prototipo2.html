@@ -3,82 +3,72 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Prototipo 2</title>
-	<link href="../utilerias/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="../utilerias/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
-    <script type="text/javascript" src="../utilerias/lib/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="../utilerias/lib/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../utilerias/lib/bootstrap-datetimepicker.js"></script>
-    <script type="text/javascript" src="../utilerias/js/bootstrap-datepicker.es.js"></script>
+	<link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../utilerias/css/datepicker.css">
+    <script type="text/javascript" src="../utilerias/lib/jquery.js" charset="UTF-8" ></script>
+    <script type="text/javascript" src="../utilerias/lib/bootstrap.js" charset="UTF-8" ></script>
+    <script type="text/javascript" src="../utilerias/lib/bootstrap-datepicker.js" charset="UTF-8" ></script>
+    <script type="text/javascript" src="../utilerias/js/widgetcalendario.js" charset="UTF-8" ></script>
 </head>
 <body>
-	  <div class="col-md-12">
-        <div class="col-md-6" style="padding-top:20px; text-align:center;">
-            <form action="" class="form-horizontal"  role="form">
-            <fieldset>
-            <legend>Inicio</legend>
-            <div class="form-group">
-                <label for="dtp_input1" class="col-md-2 control-label">DateTime Picking</label>
-                <div class="input-group date form_datetime col-md-5" data-date="2000-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-                    <input class="form-control" size="16" type="text" value="" readonly>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+    <div class="container-fluid" id="principal2">
+        <section class="col-md-12" id="form2">
+                    <div style="background:red;">adsasdas</div>
+                <div class="col-md-4">
+                    <section style="background:red">
+                        <input type="text" autocomplete="on" placeholder="Ingresa un grupo" requiered>
+                        <label>Asunto</label><input id="asunto" type="text" placeholder="Ingrese un asunto" requiered>
+                        <label>Etiqueta</label><input type="text" placeholder="Ingresa la Etiqueta" requiered>
+                        <label>Propietario</label><input type="text" autocomplete="on" placeholder="Ingresa el propietario" requiered>
+                        <label>Asignado</label><input type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered>
+                       <label>Prioridad</label>  <select id = "opcion">
+                            <option value = "alto">Alto</option>
+                            <option value = "bajo">Bajo</option>
+                            <option value = "critico">Critico</option>
+                            <option value = "medio">Medio</option>
+                        </select>
+                        <label>Estatus</label> <select id = "opcion2">
+                            <option value = "abierto">Abierto</option>
+                            <option value = "cerrado">Cerrado</option>
+                            <option value = "espera">En espera</option>
+                            <option value = "opad">Revision Administrativa</option>
+                            <option valeu = "opop">Revision Operativa</option>
+                        </select>
+                    </section>
                 </div>
-                <input type="hidden" id="dtp_input1" value="" /><br/>
-            </div>
-            </fieldset>
-            </form>
-        </div>
-        <div class="col-md-6" style="padding-top:20px;">
-        <form action="" class="form-horizontal"  role="form">
-            <fieldset>
-            <legend>Termino</legend>
-            <div class="form-group">
-                <label for="dtp_input1" class="col-md-2 control-label">DateTime Picking</label>
-                <div class="input-group date form_datetime col-md-5" data-date="2000-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-                    <input class="form-control" size="16" type="text" value="" readonly>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+
+                <div class="col-md-4"> 
+                    <section style="background:blue">
+                    <label><h4>Tereas Relacionadas</h4></label>
+                    <label>Fecha</label><input class="wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD">
+                    <label>Recordatorio</label><input class="wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD">
+                    <label><h4>Descripción</h4></label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Descripción...">
+                    </textarea>
+                    </section>
+               </div>
+                <div class="col-md-4">
+                        <form>
+                   <ul>
+                    <li><input type="checkbox" name="check" value="borrar">Delated Entity</li>
+                    <li><input type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
+                    <li><input type="checkbox" name="check" value="privado">Private</li>
+                   </ul>    
+                  </form>
+                    <label><h4>Alertas</h4></label>
+                        <form>
+                               <input type="radio" name="radio" value="alta">Alta
+                               <input type="radio" name="radio" value="media">Media
+                               <input type="radio" name="radio" value="ninguna">Ninguna
+                        </form> 
+                    <label><h4>Attach File</h4></label>
+                      <button id="examinar" name="examinar" type="submit">Examinar</button>
+                      <button id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
                 </div>
-                <input type="hidden" id="dtp_input1" value="" /><br/>
-            </div>
-            </fieldset>
-        </form>
-        </div>
-    </div>
-</div>
-<script type="text/javascript">
-    $('.form_datetime').datetimepicker({
-        language:  'es',
-        weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 2,
-		forceParse: 0,
-        showMeridian: 1
-    });
-	$('.form_date').datetimepicker({
-        language:  'es',
-        weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 2,
-		minView: 2,
-		forceParse: 0
-    });
-	$('.form_time').datetimepicker({
-        language:  'es',
-        weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 1,
-		minView: 0,
-		maxView: 1,
-		forceParse: 0
-    });
-</script>
+        </section>      
+   </div>
+	  
 
 </body>
 </html>
