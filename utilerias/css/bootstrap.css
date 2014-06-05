@@ -569,6 +569,7 @@ a.bg-danger:hover {
 }
 ul,
 ol {
+  list-style: none;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -1095,7 +1096,7 @@ pre code {
     width: 91.66666667%;
   }
   .col-md-10 {
-    width: 83.33333333%;
+    width: 83.35555555%;
   }
   .col-md-9 {
     width: 75%;
