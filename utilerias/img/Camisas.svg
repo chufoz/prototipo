@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="215.9mm" height="279.4mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21590 27940"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID1" horiz-adv-x="637" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Coolvetica Rg">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+  </font>
+  <font id="FontID0" horiz-adv-x="619" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Fluctuation Bk">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="U" horiz-adv-x="626"><path d="M473 238.999c0,-140.997 -15.9995,-155.001 -159.002,-155.001 -144,0 -160.998,10.0029 -160.998,155.001l0 432.001 -112.999 0 0 -430.998c0,-217.003 56.0007,-254.001 275.997,-254.001 220.999,0 271.003,36.9978 271.003,254.001l0 430.998 -114.002 0 0 -432.001z"/></glyph>
+   <glyph unicode="O" horiz-adv-x="644"><path d="M322.998 -13.9989c219.004,0 287.003,52.9973 287.003,349 0,297.001 -67.0013,349.998 -287.003,349.998 -221.997,0 -287.996,-52.9973 -287.996,-349.998 0,-296.003 66.9962,-349 287.996,-349zm0 90.9979c-140.997,0 -172.996,31.0012 -172.996,258.002 0,227.999 31.9989,257.997 172.996,257.997 140.004,0 172.003,-29.9984 172.003,-257.997 0,-227.001 -31.9989,-258.002 -172.003,-258.002z"/></glyph>
+   <glyph unicode="L" horiz-adv-x="522"><path d="M499.002 0l0 99.0002 -269.003 0c-54.0001,0 -74.9985,22.0012 -74.9985,72.0002l0 500 -115 0 0 -506.002c0,-115.997 36.0001,-164.999 184.999,-164.999l274.002 0z"/></glyph>
+   <glyph unicode="I" horiz-adv-x="205"><path d="M160 0l0 671 -114.002 0 0 -671 114.002 0z"/></glyph>
+   <glyph unicode="T" horiz-adv-x="567"><path d="M340 0l0 572.998 202.999 0 0 98.0025 -520.998 0 0 -98.0025 203.997 0 0 -572.998 114.002 0z"/></glyph>
+   <glyph unicode="C" horiz-adv-x="545"><path d="M511.998 99.9979l-12.996 0c-34.0046,-9.00002 -77.0042,-12.996 -141.002,-12.996 -166.999,0 -207.998,38.0007 -207.998,247.999 0,209.001 39.9961,247.999 207,247.999 62.995,0 106.997,-4.00115 137.999,-11.9983l13.9989 0 0 95.9968c-17.0023,8.0023 -76.999,18 -162,18 -243.998,0 -311.997,-63.9979 -311.997,-349.998 0,-285.002 68.9967,-349 313,-349 84.9962,0 146.999,9.99774 163.996,18l0 95.9968z"/></glyph>
+   <glyph unicode="N" horiz-adv-x="619"><path d="M579 0l0 486.001c0,157.999 -63.0001,198.998 -216,198.998 -117.998,0 -193.999,-4.99887 -284.997,-18.9978 -19.0029,-3.00344 -32.0041,-18 -32.0041,-42.0018l0 -624 115 0 0 549.999c0,17.0023 4.00115,22.9989 21.0035,24.9995 40.999,5.00401 85.9991,9.00002 153.998,9.00002 100.003,0 128.001,-22.9989 128.001,-97.9974l0 -486.001 115 0z"/></glyph>
+   <glyph unicode="S" horiz-adv-x="551"><path d="M31.9989 2.99829c33.9995,-7.99716 103.999,-16.9972 218.001,-16.9972 213.002,0 270.998,67.999 270.998,198 0,79.9973 -16.9972,119.999 -47.9984,144.998 -27.0001,20.9983 -60.9996,33.0018 -126,47.0007 -40.0012,7.99716 -81.9979,15.0017 -121.001,22.0012 -74.9985,13.9989 -90.0002,27.0001 -90.0002,95.9968 0,64.003 21.0035,94.0014 159.002,94.0014 69.0019,0 126,-7.99716 171.998,-18l17.0023 0 0 94.0014c-60.9996,13.0012 -125.003,20.9983 -202.002,20.9983 -194.997,0 -255.997,-56.9984 -255.997,-189.998 0,-154.003 78.9996,-173.001 176.997,-190.003l107.003 -19.9955c87.9996,-17.0023 101.999,-29.0006 101.999,-100.003 0,-74.9985 -27.0001,-103.999 -177.002,-103.999 -90.9979,0 -151.997,9.00002 -189.998,18.9978l-13.0012 0 0 -96.9997z"/></glyph>
+   <glyph unicode=" " horiz-adv-x="240"></glyph>
+   <glyph unicode="G" horiz-adv-x="590"><path d="M482 0c42.9995,0 63.9979,22.9989 63.9979,69.0019l0 286 -112.999 0 0 -235.003c0,-14.9966 -5.99659,-22.9989 -18.9978,-22.9989l-92.9985 0c-134.003,0 -172.003,28.0029 -172.003,238.002 0,209.999 42.9995,247.999 216,247.999 63.9979,0 115,-4.00115 152.003,-11.9983l16.9972 0 0 95.9968c-15.9995,8.0023 -90.0002,18 -175.002,18 -250.998,0 -323.996,-63.0001 -323.996,-349.998 0,-284 65.9984,-335.001 287.996,-335.001l159.002 0z"/></glyph>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Coolvetica Rg";src:url("#FontID1") format(svg)}
+    @font-face { font-family:"Fluctuation Bk";src:url("#FontID0") format(svg)}
+    .str4 {stroke:#00AFEF;stroke-width:7.62}
+    .str2 {stroke:#FEFEFE;stroke-width:7.62}
+    .str0 {stroke:#373435;stroke-width:20}
+    .str1 {stroke:#00AFEF;stroke-width:100}
+    .str3 {stroke:#FEFEFE;stroke-width:100}
+    .fil4 {fill:none}
+    .fil3 {fill:#00AFEF}
+    .fil0 {fill:#373435}
+    .fil2 {fill:#BDBFC1}
+    .fil5 {fill:#F58634}
+    .fil1 {fill:#FEFEFE}
+    .fnt0 {font-weight:normal;font-size:1944.44px;font-family:'Fluctuation Bk'}
+    .fnt1 {font-weight:normal;font-size:1944.44px;font-family:'Fluctuation Bk'}
+    .fnt2 {font-weight:normal;font-size:1944.44px;font-family:'Fluctuation Bk'}
+    .fnt3 {font-weight:normal;font-size:1944.44px;font-family:'Fluctuation Bk'}
+    .fnt4 {font-weight:normal;font-size:1944.44px;font-family:'Fluctuation Bk'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="21634" y="500" width="15204" height="15556"/>
+  <g id="_789958800">
+   <text x="22332" y="13584"  class="fil1 fnt0">ICT</text>
+   <text x="24894" y="13584"  class="fil2 fnt0"> CONSULTING</text>
+   <g>
+    <polygon class="fil3" points="28734,10634 27601,6408 31868,7551 29348,8226 "/>
+    <circle class="fil4 str1" transform="matrix(-2.08962 -2.08962 2.08962 -2.08962 29095.4 8042.16)" r="1100"/>
+   </g>
+  </g>
+  <g id="_789959952">
+   <rect class="fil3 str0" x="6379" y="16205" width="15204" height="15556"/>
+   <text x="7077" y="29289"  class="fil0 fnt1">ICT</text>
+   <text x="9640" y="29289"  class="fil2 fnt1"> CONSULTING</text>
+   <polygon class="fil1 str2" points="13479,26338 12346,22112 16613,23256 14094,23931 "/>
+   <circle class="fil4 str3" transform="matrix(-2.08962 -2.08962 2.08962 -2.08962 13840.6 23746.7)" r="1100"/>
+  </g>
+  <g id="_789964336">
+   <rect class="fil2 str0" x="21634" y="16205" width="15204" height="15556"/>
+   <text x="22332" y="29289"  class="fil0 fnt2">ICT</text>
+   <text x="24894" y="29289"  class="fil2 fnt2"> </text>
+   <text x="25363" y="29289"  class="fil1 fnt2">CONSULTING</text>
+   <polygon class="fil3 str4" points="28734,26338 27601,22112 31868,23256 29348,23931 "/>
+   <circle class="fil4 str1" transform="matrix(-2.08962 -2.08962 2.08962 -2.08962 29095.4 23746.7)" r="1100"/>
+  </g>
+  <g id="_789963664">
+   <rect class="fil5 str0" x="-8923" y="500" width="15204" height="15556"/>
+   <text x="-8225" y="13584"  class="fil0 fnt3">ICT</text>
+   <text x="-5662" y="13584"  class="fil2 fnt3"> CONSULTING</text>
+   <polygon class="fil1 str2" points="-1823,10634 -2955,6408 1312,7551 -1208,8226 "/>
+   <circle class="fil4 str3" transform="matrix(-2.08962 -2.08962 2.08962 -2.08962 -1460.74 8042.16)" r="1100"/>
+  </g>
+  <g id="_789964976">
+   <rect class="fil1 str0" x="6379" y="500" width="15204" height="15556"/>
+   <text x="7077" y="13584"  class="fil0 fnt4">ICT</text>
+   <text x="9640" y="13584"  class="fil2 fnt4"> CONSULTING</text>
+   <g>
+    <polygon class="fil3" points="13479,10634 12346,6408 16613,7551 14094,8226 "/>
+    <circle class="fil4 str1" transform="matrix(-2.08962 -2.08962 2.08962 -2.08962 13840.6 8042.16)" r="1100"/>
+   </g>
+  </g>
+ </g>
+</svg>

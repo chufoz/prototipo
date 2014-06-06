@@ -79,32 +79,53 @@
 	}
 /*Prototipo 1*/
 
-#container-fluid{
-	padding: 2px !important;
-	margin: 50px !important;
-}
-label{
-	text-align: center!important;
+	#container-fluid{
+		padding: 2px !important;
+		margin: 50px !important;
+	}
+	label{
+		text-align: center!important;
 
-}
+	}
+	#trs{
+		padding-right: 860px !important;
+		text-align: top !important;
+	}
+	#row{
+		margin:30px !important;
+		padding: 200px !important;
+	}
 
-
-#trs{
-	padding-right: 860px !important;
-	text-align: top !important;
-}
-#row{
-	margin:30px !important;
-	padding: 200px !important;
-}
-
-#col-md-6{
-	display: inline-block !important;
-}
+	#col-md-6{
+		display: inline-block !important;
+	}
 /*Clases*/
-.des{
-	display: inline-block !important;
-}
+	.des{
+		display: inline-block !important;
+	}
+/*Prototipo Login*/
+	section#cont_bor{
+		margin: 10px !important;
+		padding: 10px !important;
+		border:solid 5px #56b0ed;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		border-radius: 15px
+	}
+	section#cont_dblbor{
+		border:double 7px #BDBDBD !important;
+    	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	border-radius: 10px;
+    	margin: 30px !important;
+    	text-align: center !important;
+	}
+	section#contenedor{
+		margin:100px !important;
+	}
+	input#inp_log{
+		display: inline-block !important;
+	}
 	
 	
 	
