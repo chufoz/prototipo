@@ -1,73 +1,111 @@
 	/*AUTORES:
 			Jesús Israel Aguirre Valle.*/
+	h4{
+		margin: 22px 4px !important;
+	}
 
 	input[type="text"]:hover{
 		border: 2px dashed #3D6BF5;
 		
 	}
 	input{
-		width: 100px !important;
-		height: 30px !important;
+		width: 210px !important;
+		height: 40px !important;
+		padding: 10px !important;
+		display: block !important;
 	}
+	input#inp{
+		display: inline-block !important;
 
+	}
 	input[type="text"]:focus{
 		border: 5px solid #4169e1; 
 	}
 	article{
-		padding: 40px !important;
-		display: inline-block !important;
+		padding: 15px !important;
 	}
 	
 	/*Contenedores*/
 	section#form{
 		margin: 20px !important;
 		padding: 10px !important;
-		border:solid 5px #FAAC58;
+		border:solid 5px #56b0ed;
 		-moz-border-radius: 15px;
 		-webkit-border-radius: 15px;
 		border-radius: 15px
 	}
 
 	section#uno, section#tres, section#dos{
-    	border:double 7px #56b0ed;
+    	border:double 7px #BDBDBD;
     	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
     	border-radius: 10px;
-    	margin: 10px !important;
-	}
-	/*Prototipo 2*/
-	article#art1, article#art2, article#art3{
-		display: block !important;
-		padding: 50px !important;
+    	margin: 5px !important;
 	}
 
+	/*Prototipo 2*/
+	section#principal2{
+		margin: 30px !important;
+		padding:30px !important;
+	}
 	section#form2{
-		margin: 20px !important;
+		margin: 10px !important;
 		padding: 10px !important;
-		border:solid 5px #FAAC58;
+		border:solid 5px #56b0ed;
 		-moz-border-radius: 15px;
 		-webkit-border-radius: 15px;
 		border-radius: 15px
 	}
-	section#izquierda, section#centro, section#derecha{
-    	border:double 7px #56b0ed;
+	section#borde{
+    	border:double 7px #BDBDBD;
     	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
     	border-radius: 10px;
-    	margin: 10px !important;
-    	text-align: center !important;
-    	display: inline-block !important;
+    	margin: 5px !important;
+    	width: 345px !important;
+    	height: 650px !important;
+		}
+	article#art1{
+		margin: 20px !important;
+		padding: 10px !important;
 	}
-	.col-md-4{
-		display: inline-block !important;
-		padding: 15px !important;
-		width: 300px !important;
-		height: 500px !important;
+	article#art2{
+		margin: 20px !important;
+		padding:20px !important;
+		text-align:left !important;
 	}
-		
-	/*Identificadores*/
+	ul{
+		list-style-type: none !important;
+	}
+/*Prototipo 1*/
 
-	/*Clases*/
+#container-fluid{
+	padding: 2px !important;
+	margin: 50px !important;
+}
+label{
+	text-align: center!important;
+
+}
+
+
+#trs{
+	padding-right: 860px !important;
+	text-align: top !important;
+}
+#row{
+	margin:30px !important;
+	padding: 200px !important;
+}
+
+#col-md-6{
+	display: inline-block !important;
+}
+/*Clases*/
+.des{
+	display: inline-block !important;
+}
+	
 	
 	
 	

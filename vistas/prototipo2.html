@@ -2,95 +2,135 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+    <title>PROTOTIPO 2</title>
+    <link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
     <link href="../utilerias/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="../utilerias/css/datetimepicker.css" rel="stylesheet" media="screen">
     <script type="text/javascript" src="../utilerias/lib/jquery.js"></script>
     <script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
     <script type="text/javascript" src="../utilerias/lib/datetimepicker.js"></script>
     <script src="../utilerias/js/widgetcalendario.js" type="text/javascript"></script>
-	<!--<title>Prototipo 2</title>
-	<link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../utilerias/css/datetimepicker.css">
-    <script type="text/javascript" src="../utilerias/lib/jquery.js" charset="UTF-8" ></script>
-    <script type="text/javascript" src="../utilerias/lib/bootstrap.js" charset="UTF-8" ></script>
-    <script type="text/javascript" src="../utilerias/lib/bootstrap-datetimepicker.js" charset="UTF-8" ></script>
-    <script type="text/javascript" src="../utilerias/js/widgetcalendario.js" charset="UTF-8" ></script>-->
+    <script type="text/javascript" src="../utilerias/fonts/"></script>
 </head>
 <body>
     <div class="container-fluid" id="principal2">
-        <section class="col-md-12" id="form2">
-                    <div style="background:red;">adsasdas</div>
-                <div class="col-md-4">
-                    <section style="background:red">
-                        <input type="text" autocomplete="on" placeholder="Ingresa un grupo" requiered>
-                        <label>Asunto</label><input id="asunto" type="text" placeholder="Ingrese un asunto" requiered>
-                        <label>Etiqueta</label><input type="text" placeholder="Ingresa la Etiqueta" requiered>
-                        <label>Propietario</label><input type="text" autocomplete="on" placeholder="Ingresa el propietario" requiered>
-                        <label>Asignado</label><input type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered>
-                       <label>Prioridad</label>  <select id = "opcion">
-                            <option value = "alto">Alto</option>
-                            <option value = "bajo">Bajo</option>
-                            <option value = "critico">Critico</option>
-                            <option value = "medio">Medio</option>
-                        </select>
-                        <label>Estatus</label> <select id = "opcion2">
-                            <option value = "abierto">Abierto</option>
-                            <option value = "cerrado">Cerrado</option>
-                            <option value = "espera">En espera</option>
-                            <option value = "opad">Revision Administrativa</option>
-                            <option valeu = "opop">Revision Operativa</option>
-                        </select>
-                    </section>
-                </div>
-                 <div class="col-md-12">
-        <div class="col-md-6" style="padding-top:20px; text-align:center;">
-            <form action="" class="form-horizontal"  role="form">
-                <fieldset>
-                    <div class="form-group">
-                        <label class="col-md-2 control-label">Calendario</label>
-                        <div class="input-group date Wcalendar col-md-5" data-date-format="yyyy-mm-dd H:mm:ss P">
-                            <input class="form-control" size="16" type="text" value="" readonly>
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-    </div>
+        <section class="col-md-12" id="form2" style="background:#D8D8D8">
+                <section id="borde" class="col-md-4">
+                        <article id="art1">
+                            <form>
+                                <ul>
+                                    <li><input type="text" autocomplete="on" placeholder="Ingresa un grupo" requiered></li>
+                                    <li><label>Asunto</label></li>
+                                    <li><input type="text" placeholder="Ingrese un asunto" requiered></li>
+                                    <li><label>Etiqueta</label></li>
+                                    <li><input type="text" placeholder="Ingresa la Etiqueta" requiered></li>
+                                </ul>
+                            </form>
+                        </article>
+                        <article id="art1">
+                            <form>
+                                <ul>
+                                    <li><label>Propietario</label></li>
+                                    <li><input type="text" autocomplete="on" placeholder="Ingresa el propietario" requiered></li>
+                                    <li><label>Asignado</label></li>
+                                    <li><input type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered></li>
+                                </ul>
+                            </form>
+                        </article>
+                        <article id="art1">
+                            <form>
+                                <ul>
+                                    <li><label>Prioridad</label></li>  
+                                            <select id = "opcion">
+                                                <option value = "alto">Alto</option>
+                                                <option value = "bajo">Bajo</option>
+                                                <option value = "critico">Critico</option>
+                                                <option value = "medio">Medio</option>
+                                            </select>
+                                    <li><label>Estatus</label></li> 
+                                            <select id = "opcion2">
+                                                <option value = "abierto">Abierto</option>
+                                                <option value = "cerrado">Cerrado</option>
+                                                <option value = "espera">En espera</option>
+                                                <option value = "opad">Revision Administrativa</option>
+                                                <option valeu = "opop">Revision Operativa</option>
+                                            </select>
+                                </ul>
+                            </form>
+                        </article>
+                </section>
 
-                <!--<div class="col-md-4"> 
-                    <section style="background:blue">
-                    <label><h4>Tereas Relacionadas</h4></label>
-                    <label>Fecha</label><input class="form-control Wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD H:mm:ss">
-                    <label>Recordatorio</label><input class="form-control Wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD H:mm:ss ">
-                    <label><h4>Descripción</h4></label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Descripción...">
-                    </textarea>
-                    </section>
-               </div>-->
-                <div class="col-md-4">
-                        <form>
-                   <ul>
-                    <li><input type="checkbox" name="check" value="borrar">Delated Entity</li>
-                    <li><input type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
-                    <li><input type="checkbox" name="check" value="privado">Private</li>
-                   </ul>    
-                  </form>
-                    <label><h4>Alertas</h4></label>
-                        <form>
-                               <input type="radio" name="radio" value="alta">Alta
-                               <input type="radio" name="radio" value="media">Media
-                               <input type="radio" name="radio" value="ninguna">Ninguna
-                        </form> 
-                    <label><h4>Attach File</h4></label>
-                      <button id="examinar" name="examinar" type="submit">Examinar</button>
-                      <button id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
+            <section id="borde" class="col-md-4">
+                <article id="tareas">
+                        <label><h4>Tereas Relacionadas</h4></label>
+                </article>
+                <div class="col-md-12">
+                    <div class="col-md-6" style="padding-top:20px; text-align:center;">
+                        <form action="" class="form-horizontal"  role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                        <label class="col-md-2 control-label">Calendario</label>
+                                    <div class="input-group date Wcalendar col-md-5" data-date-format="yyyy-mm-dd H:mm:ss P">
+                                        <input id="cal1"class="form-control" size="16" type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
+                <div class="col-md-12">
+                    <div class="col-md-6" style="padding-top:20px; text-align:center;">
+                        <form action="" class="form-horizontal"  role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                        <label class="col-md-2 control-label">Recordatorio</label>
+                                    <div class="input-group date Wcalendar col-md-5" data-date-format="yyyy-mm-dd H:mm:ss P">
+                                        <input id="cal1"class="form-control" size="16" type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <article id="descri">
+                    <label><h4>Descripción</h4></label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Descripción..."></textarea>
+                </article>
+            </section>
+            <section id="borde" class="col-md-4">
+                <article id="art2">
+                    <form>
+                        <ul>
+                            <li><input id="inp" type="checkbox" name="check" value="borrar">Delated Entity</li>
+                            <li><input id="inp" type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
+                            <li><input id="inp" type="checkbox" name="check" value="privado">Private</li>
+                        </ul>    
+                    </form>
+                    <form>
+                        <ul>
+                            <li><label><h4>Alertas</h4></label></li>
+                                <li><select id = "opcion3">
+                                    <option value = "alta">Alta</option>
+                                    <option value = "media">Media</option>
+                                    <option value = "ninguna">Ninguna</option>
+                                </select></li>
+                        </ul>    
+                    </form>
+                </article>
+                <article id="art2">
+                    <label><h4>Attach File</h4></label>
+                    <input type="file" id="exampleInputFile">
+                        <p class="help-block">Ningun archivo seleccionado</p>
+                </article>
+                <article id="art2">
+                    <button class="btn btn-primary" id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
+                </article>
+            </section>
         </section>      
    </div>
-	  
-
 </body>
 </html>

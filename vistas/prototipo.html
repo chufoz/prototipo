@@ -3,21 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Prototipo</title>
-  <link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
-  <link rel="stylesheet" type="text/css" href="../utilerias/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="../utilerias/css/datepicker.css">
-  <script type="text/javascript" src="../utilerias/lib/jquery.js" charset="UTF-8" ></script>
-  <script type="text/javascript" src="../utilerias/lib/bootstrap.js" charset="UTF-8" ></script>
-  <script type="text/javascript" src="../utilerias/lib/bootstrap-datepicker.js" charset="UTF-8" ></script>
-  <script type="text/javascript" src="../utilerias/js/widgetcalendario.js" charset="UTF-8" ></script>
-</head>
+	<link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
+	<link href="../utilerias/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../utilerias/css/datetimepicker.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="../utilerias/lib/jquery.js"></script>
+    <script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
+    <script type="text/javascript" src="../utilerias/lib/datetimepicker.js"></script>
+    <script src="../utilerias/js/widgetcalendario.js" type="text/javascript"></script>
+ </head>
 <body>
 	<div class="container-fluid" id="principal">
 		<section class="row" id="form">
 			<section class="col-md-12" id="uno" >
 				<article class="col-md-4" id="autocomplet">
-					<input type="text" autocomplete="on" placeholder="Ingresa un grupo" requiered>
-					<label>Asunto</label><input id="asunto" type="text" placeholder="Ingrese un asunto" requiered>
+					<input type="text" autocomplete="on" placeholder="Ingresa un grupo" requiered>					
+					<label>Asunto</label><input id="asunto" type="text" placeholder="Ingrese un asunto" requiered>		
 					<label>Etiqueta</label><input type="text" placeholder="Ingresa la Etiqueta" requiered>
 				</article>
 				<article class="col-md-4" id="propietario">
@@ -27,59 +27,88 @@
 					<label>Asignado</label><input type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered>
 				</article>
 				<article class="col-md-4" id="prioridad">
-					   <label>Prioridad</label>  <select id = "opcion">
-               				<option value = "alto">Alto</option>
-               				<option value = "bajo">Bajo</option>
-               				<option value = "critico">Critico</option>
-              			 	<option value = "medio">Medio</option>
-             			</select>
-             		
-             			<label>Estatus</label> <select id = "opcion2">
-               				<option value = "abierto">Abierto</option>
-               				<option value = "cerrado">Cerrado</option>
-               				<option value = "espera">En espera</option>
-              			 	<option value = "opad">Revision Administrativa</option>
-              			 	<option valeu = "opop">Revision Operativa</option>
-             			</select>
-             			
+              <form>
+                <ul> 
+					          <li><label>Prioridad </label></li>  
+					               <select id = "opcion">
+               				     <option value = "alto">Alto</option>
+               				     <option value = "bajo">Bajo</option>
+               				     <option value = "critico">Critico</option>
+              			 	     <option value = "medio">Medio</option>
+             			      </select>            		
+             			  <li><label>Estatus</label></li> 
+                      <select id = "opcion2">
+               				   <option value = "abierto">Abierto</option>
+               				   <option value = "cerrado">Cerrado</option>
+               				   <option value = "espera">En espera</option>
+              			 	   <option value = "opad">Revision Administrativa</option>
+              			 	   <option valeu = "opop">Revision Operativa</option>
+             			    </select>
+                </ul>
+              </form>             			
 				</article>
 			</section>
-
      		<section class="col-md-12" id="dos">
 			<section class="row" id="trs" >
 				<article class="col-md-12" id="tareas">
 					<label><h4>Tereas Relacionadas</h4></label>
 				</article>
       		</section>
-        	<section class="col-md-12" id="calendarios" >
-          		<article class="col-md-6" id="calini">
-               		<label>Fecha</label><input class="wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD H:mm:ss">
-				</article>
-          		<article class="col-md-6" id="calfin">
-                 	<label>Recordatorio</label><input class="wcalendar" name="calendar" id="calendar" placeholder="YYYY-MM-DD H:mm:ss">
-          		</article>  
-        	</section>
-      			<article class="col-md-12" id="des">
+          <section class="col-md-12">
+     		
+        		<div class="col-md-6" style="padding-top:20px; text-align:center;">
+            		<form action="" class="form-horizontal"  role="form">
+                		<fieldset>
+                    		<div class="form-group">
+                        		<label class="col-md-2 control-label">Fecha</label>
+                        	<div class="input-group date Wcalendar col-md-5" data-date-format="yyyy-mm-dd H:mm:ss P">
+                            	<input class="form-control" type="text" value="" readonly>
+                            	<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                            	<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        		</div>
+                    		</div>
+                		</fieldset>
+           			</form>
+       			</div>
+    		
+    		
+        		<div class="col-md-6" style="padding-top:20px; text-align:center;">
+            		<form action="" class="form-horizontal"  role="form">
+                		<fieldset>
+                    		<div class="form-group">
+                        		<label class="col-md-2 control-label">Recordatorio</label>
+                        	<div class="input-group date Wcalendar col-md-5" data-date-format="yyyy-mm-dd H:mm:ss P">
+                            	<input class="form-control" type="text" value="" readonly>
+                            	<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                            	<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        		</div>
+                    		</div>
+                		</fieldset>
+           			</form>
+       			</div>
+    	
+        </section>
+        	     <article class="col-md-12" id="des">
 					<label><h4>Descripción</h4></label>
 					<textarea id="mensaje" name="mensaje" placeholder="Descripción..."></textarea>
 				</article>
 			</section>
 			<section class="col-md-12" id="tres">
-        		<article class="col-md-4">
+        		<article class="col-md-4" id="alert">
 				  <form>
               	   <ul>
-               		<li><input type="checkbox" name="check" value="borrar">Delated Entity</li>
-               		<li><input type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
-               		<li><input type="checkbox" name="check" value="privado">Private</li>
+               		<li><input id="inp" type="checkbox" name="check" value="borrar">Delated Entity</li>
+               		<li><input id="inp" type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
+               		<li><input id="inp" type="checkbox" name="check" value="privado">Private</li>
               	   </ul>    
 				  </form>
 				</article>
          		<article class="col-md-4" id="alert">
 				    <label><h4>Alertas</h4></label>
 				        <form>
-					           <input type="radio" name="radio" value="alta">Alta
-					           <input type="radio" name="radio" value="media">Media
-					           <input type="radio" name="radio" value="ninguna">Ninguna
+					           <input id="inp" type="radio" name="radio" value="alta">Alta
+					           <input id="inp" type="radio" name="radio" value="media">Media
+					           <input id="inp" type="radio" name="radio" value="ninguna">Ninguna
 				        </form> 
         		</article>
        			<article class="col-md-4">
