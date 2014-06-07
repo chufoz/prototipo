@@ -169,7 +169,8 @@
     	text-align: center !important;
 	}
 	section#contenedor{
-		margin:100px !important;
+		margin:200px !important;
+		float: center !important;
 	}
 	input#inp_log{
 		display: inline-block !important;
@@ -178,6 +179,11 @@
 		float: center !important;
 
 	}
+	section#content_principal{
+		margin-top: -250px !important;
+	}
+	/*Prototipo Login 2*/
+	
 	
 	
 	
