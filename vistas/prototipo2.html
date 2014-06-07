@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PROTOTIPO 2</title>
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../utilerias/css/style.css">
     <link href="../utilerias/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="../utilerias/css/datetimepicker.css" rel="stylesheet" media="screen">
@@ -15,7 +16,7 @@
 </head>
 <body>
     <div class="container-fluid" id="principal2">
-        <section class="col-md-12" id="form2" style="background:#D8D8D8">
+        <section class="col-md-12" id="form2" style="background:#EEE">
                 <section id="borde" class="col-md-4">
                         <article id="art1">
                             <form>
@@ -42,20 +43,20 @@
                             <form>
                                 <ul>
                                     <li><label>Prioridad</label></li>  
-                                            <select id = "opcion">
-                                                <option value = "alto">Alto</option>
-                                                <option value = "bajo">Bajo</option>
-                                                <option value = "critico">Critico</option>
-                                                <option value = "medio">Medio</option>
-                                            </select>
+                                        <select id = "opcion">
+                                            <option value = "alto" id="alto">Alto</option>
+                                            <option value = "bajo" id="bajo">Bajo</option>
+                                            <option value = "critico" id="cri">Critico</option>
+                                            <option value = "medio" id="med">Medio</option>
+                                        </select>
                                     <li><label>Estatus</label></li> 
-                                            <select id = "opcion2">
-                                                <option value = "abierto">Abierto</option>
-                                                <option value = "cerrado">Cerrado</option>
-                                                <option value = "espera">En espera</option>
-                                                <option value = "opad">Revision Administrativa</option>
-                                                <option valeu = "opop">Revision Operativa</option>
-                                            </select>
+                                        <select id = "opcion2">
+                                            <option value = "abierto" id="ab">Abierto</option>
+                                            <option value = "cerrado" id="cer">Cerrado</option>
+                                            <option value = "espera" id="enes">En espera</option>
+                                            <option value = "opad" id="revad">Revision Administrativa</option>
+                                            <option valeu = "opop" id="revop">Revision Operativa</option>
+                                        </select>
                                 </ul>
                             </form>
                         </article>
@@ -115,9 +116,9 @@
                         <ul>
                             <li><label><h4>Alertas</h4></label></li>
                                 <li><select id = "opcion3">
-                                    <option value = "alta">Alta</option>
-                                    <option value = "media">Media</option>
-                                    <option value = "ninguna">Ninguna</option>
+                                    <option value = "alta"id="alalt">Alta</option>
+                                    <option value = "media"id="almed">Media</option>
+                                    <option value = "ninguna"id="alnin">Ninguna</option>
                                 </select></li>
                         </ul>    
                     </form>

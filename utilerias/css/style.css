@@ -1,11 +1,16 @@
 	/*AUTORES:
 			Jesús Israel Aguirre Valle.*/
+			/*Generales*/
+	section{
+		font-family: "Open Sans", "Arial", "Helvetica", "Sans-serif" !important;
+		color: #666 !important;
+	}
 	h4{
 		margin: 22px 4px !important;
 	}
 
 	input[type="text"]:hover{
-		border: 2px dashed #3D6BF5;
+		border: 2px dashed #428BCA;
 		
 	}
 	input{
@@ -19,24 +24,25 @@
 
 	}
 	input[type="text"]:focus{
-		border: 5px solid #4169e1; 
+		border: 5px solid #428BCA; 
 	}
 	article{
 		padding: 15px !important;
 	}
+	/*Prototipo 2*/
 	
 	/*Contenedores*/
 	section#form{
 		margin: 20px !important;
 		padding: 10px !important;
-		border:solid 5px #56b0ed;
+		border:solid 5px #428BCA;
 		-moz-border-radius: 15px;
 		-webkit-border-radius: 15px;
 		border-radius: 15px
 	}
 
 	section#uno, section#tres, section#dos{
-    	border:double 7px #BDBDBD;
+    	border:double 7px #DDD !important;
     	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
     	border-radius: 10px;
@@ -51,13 +57,13 @@
 	section#form2{
 		margin: 10px !important;
 		padding: 10px !important;
-		border:solid 5px #56b0ed;
+		border:solid 5px #428BCA;
 		-moz-border-radius: 15px;
 		-webkit-border-radius: 15px;
 		border-radius: 15px
 	}
 	section#borde{
-    	border:double 7px #BDBDBD;
+    	border:double 7px #DDD !important;
     	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
     	border-radius: 10px;
@@ -77,6 +83,48 @@
 	ul{
 		list-style-type: none !important;
 	}
+	/*Prioridad*/
+	option#alto{
+		background: #FFFF66 !important;
+	}
+	option#bajo{
+		background: #FFFFCC !important;
+	}
+	option#cri{
+		background: #FF6666 !important;
+	}
+	option#med{
+		background: #FFFF99 !important;
+	}
+	/*Estatus*/
+	option#ab{
+		background: #66CC66 !important;
+	}
+	option#cer{
+		background: #FF6633 !important;
+	}
+	option#enes{
+		background: #3399CC !important;
+	}
+	option#revad{
+		background: #FFCC66 !important;
+	}
+	option#revop{
+		background: #669933 !important;
+	}
+	/*Alertas*/
+	option#alalt{
+		background: #F94646 !important;
+	}
+	option#almed{
+		background: #E2E052 !important;
+	}
+	option#alnin{
+		background: #66CC66 !important;
+	}
+
+
+
 /*Prototipo 1*/
 
 	#container-fluid{
@@ -105,15 +153,15 @@
 	}
 /*Prototipo Login*/
 	section#cont_bor{
-		margin: 10px !important;
-		padding: 10px !important;
-		border:solid 5px #56b0ed;
+		margin: 50px !important;
+		padding: 20px !important;
+		border:solid 5px #428BCA;
 		-moz-border-radius: 15px;
 		-webkit-border-radius: 15px;
 		border-radius: 15px
 	}
 	section#cont_dblbor{
-		border:double 7px #BDBDBD !important;
+		border:double 7px #DDD !important;
     	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
     	border-radius: 10px;
@@ -125,6 +173,10 @@
 	}
 	input#inp_log{
 		display: inline-block !important;
+	}
+	input[type="checkbox"]{
+		float: center !important;
+
 	}
 	
 	
