@@ -29,6 +29,11 @@
 	article{
 		padding: 15px !important;
 	}
+	textarea{
+		resize:none;
+		min-height: 90px !important;
+		min-width: 275px !important;
+	}
 	/*Prototipo 2*/
 	
 	/*Contenedores*/
@@ -181,6 +186,11 @@
 	section#content_principal{
 		margin-top: -250px !important;
 	}
+	div#seclog{
+		margin-left: 240px !important;
+	}
+	/*clases*/
+	
 	/*Prototipo Login 2*/
 	
 	
