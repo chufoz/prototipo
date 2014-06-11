@@ -6,7 +6,8 @@
 		color: #666 !important;
 	}
 	h4{
-		margin: 22px 4px !important;
+		margin: 5px 4px !important;
+		color: #000 !important;
 	}
 
 	input[type="text"]:hover{
@@ -15,7 +16,7 @@
 	}
 	input{
 		width: 210px !important;
-		height: 40px !important;
+		height: 33px !important;
 		padding: 10px !important;
 		display: block !important;
 	}
@@ -208,13 +209,19 @@
 	{
 
 	}
-	td, th {
+
+	td#tbl, th#tbl {
 		width: 25% !important;
     	border: 2px solid !important;
     	border-color: #428BCA !important; 
     	border-collapse: collapse !important;
-
 	}
+	article#art2pr4{
+		margin top: 10px !important;
+		padding: 10px !important;
+		text-align: center !important;
+	}
+	
 	
 	
 	
