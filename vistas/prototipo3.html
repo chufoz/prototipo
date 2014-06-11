@@ -38,42 +38,49 @@
                             <label id="prot3">Asignado</label></li>
                             <input id="prot3" type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered></li>
                         </article>
-                        <article id="art1">
-                            <form>
-                                <ul>
-                                    <li><label>Prioridad</label></li>  
-                                        <select id = "opcion">
-                                            <option value = "alto" id="alto">Alto</option>
-                                            <option value = "bajo" id="bajo">Bajo</option>
-                                            <option value = "critico" id="cri">Critico</option>
-                                            <option value = "medio" id="med">Medio</option>
-                                        </select>
-                                    <li><label>Estatus</label></li> 
-                                        <select id = "opcion2">
-                                            <option value = "abierto" id="ab">Abierto</option>
-                                            <option value = "cerrado" id="cer">Cerrado</option>
-                                            <option value = "espera" id="enes">En espera</option>
-                                            <option value = "opad" id="revad">Revision Administrativa</option>
-                                            <option value = "opop" id="revop">Revision Operativa</option>
-                                        </select>
-                                </ul>
-                            </form>
-                        </article>
+                         <article id="art2pr3">
+                    <div id="clickme">
+                        <button id="presioname" class="btn btn-primary">Opciones Avanzadas...</button>
+                            <article id="art2pr4" class="toggle" style="display: none;">
+                                <table id="tabla1" class="table table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <td id="tbl"><input type="file" id="cargar" name="cargar"></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="tbl"><input id="inp" type="checkbox" name="check" value="borrar">Delated Entity</td>
+                                            <td id="tbl"><input id="inp" type="checkbox" name="check" value="leer">Read-Only to Other Users</td>
+                                            <td id="tbl"><input id="inp" type="checkbox" name="check" value="privado">Private</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="tbl"><input id="inp" type="radio" name="radio" value="alta">Alta</td>
+                                            <td id="tbl"><input id="inp" type="radio" name="radio" value="media">Media</td>
+                                            <td id="tbl"><input id="inp" type="radio" name="radio" value="ninguna">Ninguna</td>
+                                        </tr>
+                                    </tbody>
+                                </table>  
+                            </article>   
+                    </div>
+                </article>
+                <article id="art2pr3">
+                    <button class="btn btn-primary" id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
+                </article>
+                       
                 </section>
             <section id="borde" class="col-md-4">
                 <div class="col-md-12">
                     <div class="col-md-6" style="padding-top:20px; text-align:center;">
                         <form action="" class="form-horizontal"  role="form">
-                            <fieldset>
-                                <div class="form-group">
-                                        <label class="col-md-2 control-label">Calendarizar</label>
-                                    <div class="input-group date Wcalendar col-md-5" data-date-format="yyyy-mm-dd H:mm:ss P">
-                                        <input id="cal1" class="form-control" size="16" type="text" value="" readonly>
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                    </div>
+                            <div class="form-group">
+                                    <label class="col-md-2 control-label">Calendarizar</label>
+                                <div class="input-group date Wcalendar col-md-5" data-date-format="yyyy-mm-dd H:mm:ss P">
+                                    <input id="cal1" class="form-control" size="16" type="text" value="" readonly>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
                                 </div>
-                            </fieldset>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -84,47 +91,20 @@
                 <div class="col-md-12">
                     <div class="col-md-6" style="padding-top:20px; text-align:center;">
                         <form action="" class="form-horizontal"  role="form">
-                            <fieldset>
-                                <div class="form-group">
-                                        <label class="col-md-2 control-label">Recordarme</label>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">Recordarme</label>
                                     <div class="input-group date Wcalendar col-md-5" data-date-format="yyyy-mm-dd H:mm:ss P">
                                         <input id="cal1" class="form-control" size="16" type="text" value="" readonly>
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
                                     </div>
-                                </div>
-                            </fieldset>
+                            </div>
                         </form>
                     </div>
                 </div>
-                <article id="art2pr3">
-                    <div id="clickme">
-                        <button id="presioname" class="btn btn-primary">Opciones Avanzadas...</button>
-                            <article id="art2pr4" class="toggle" style="display: none;">
-                                    <label><h4>Attach File</h4></label>
-                                    <input type="file" id="exampleInputFile">
-                                <form>
-                                    <ul>
-                                        <li><input id="inp" type="checkbox" name="check" value="borrar">Delated Entity</li>
-                                        <li><input id="inp" type="checkbox" name="check" value="leer">Read-Only to Other Users</li>
-                                        <li><input id="inp" type="checkbox" name="check" value="privado">Private</li>
-                                    </ul>    
-                                </form>
-                                    <label><h4>Alertas</h4></label>
-                                <form>
-                                    <input id="inp" type="radio" name="radio" value="alta">Alta
-                                    <input id="inp" type="radio" name="radio" value="media">Media
-                                    <input id="inp" type="radio" name="radio" value="ninguna">Ninguna
-                                </form> 
-                            </article>       
-                    </div>
-                </article>
-                <article id="art2pr3">
-                    <button class="btn btn-primary" id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
-                </article>
             </section>
             <section id="borde" class="col-md-4">
-                    <label><h4>Filtro de Actividades</h4></label>
+                    <label><h4>Lista de Actividades</h4></label>
                 <table id="tabla" class="table table-hover">
                     <thead>
                         <tr>

@@ -1691,8 +1691,8 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
-  padding: 6px 110px;
+  height: 28px;
+  padding: 2px 4px;
   font-size: 14px;
   line-height: 1.42857143;
   color: #000 !important;
