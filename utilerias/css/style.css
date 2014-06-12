@@ -75,7 +75,7 @@
     	border-radius: 10px;
     	margin: 5px !important;
     	width: 345px !important;
-    	height: 650px !important;
+    	height: auto !important;
 		}
 	article#art1{
 		margin: 20px !important;
@@ -207,7 +207,7 @@
 	}
 	label#prot3
 	{
-
+		margin-left: -25px !important;
 	}
 
 	td#tbl, th#tbl {
@@ -215,14 +215,10 @@
     	border: 2px solid !important;
     	border-color: #428BCA !important; 
     	border-collapse: collapse !important;
+    	text-align: left !important;
 	}
 	article#art2pr4{
 		margin top: 10px !important;
-		padding: 10px !important;
+		padding: 8px !important;
 		text-align: left !important;
 	}
-	
-	
-	
-	
-	

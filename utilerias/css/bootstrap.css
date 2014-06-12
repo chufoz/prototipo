@@ -275,7 +275,7 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.42857143;
+  line-height: 2.0000;
   color: #333;
   background-color: #fff;
 }
@@ -401,8 +401,10 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 10px;
+  width: 266px;
+  margin-left: 9px;
 }
 h1 small,
 .h1 small,
@@ -451,7 +453,13 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 24px;
+  border-radius: 3px;
+  background-color: #428bca;
+  color: #fff;
+  padding-top: 8px;
+  padding-bottom:8px;
+  padding-left: 10px;
+  font-size: 13px;
 }
 h4,
 .h4 {
@@ -533,7 +541,7 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: h3;
 }
 a.bg-primary:hover {
   background-color: #3071a9;
@@ -1992,9 +2000,9 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
-  padding: 3px 12px;
-  margin-bottom: -5px;
-  margin-top: -15px;
+  padding: 4px 50px;
+  margin-bottom: 10px;
+  margin-top: 3px;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -3295,6 +3303,7 @@ input[type="button"].btn-block {
   display: none;
 }
 .input-group {
+  margin: 0 auto;
   position: relative;
   display: table;
   border-collapse: separate;
@@ -3430,7 +3439,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   white-space: nowrap;
 }
 .input-group-btn > .btn {
-  position: relative;
+  position: absolute;
 }
 .input-group-btn > .btn + .btn {
   margin-left: -1px;

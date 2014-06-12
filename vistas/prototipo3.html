@@ -11,6 +11,7 @@
     <script type="text/javascript" src="../utilerias/lib/jquery.js"></script>
     <script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
     <script type="text/javascript" src="../utilerias/lib/datetimepicker.js"></script>
+    <script type="text/javascript" src="../utilerias/lib/bootstrap-filestyle.js"></script>
     <script src="../utilerias/js/widgetcalendario.js" type="text/javascript"></script>
     <script src="../utilerias/js/bootstrap-collapse.js" type="text/javascript"></script>
     <script type="text/javascript" src="../utilerias/fonts/"></script>
@@ -35,17 +36,21 @@
                                     <input id="prot3" type="text" placeholder="Ingresa la Etiqueta" requiered></li>                            
                         </article>
                         <article id="art1">
+                            <label id="prot3">Propietario</label></li>
+                            <input id="prot3" type="text" autocomplete="on" placeholder="Ingresa al propietario" requiered></li>
                             <label id="prot3">Asignado</label></li>
                             <input id="prot3" type="text" autocomplete="on" placeholder="Ingresa al asignado" requiered></li>
                         </article>
                          <article id="art2pr3">
                     <div id="clickme">
-                        <button id="presioname" class="btn btn-primary">Opciones Avanzadas...</button>
+                        <h3  id="presioname" class="text-left"> [+] Opciones Avanzadas... </h3>
                             <article id="art2pr4" class="toggle" style="display: none;">
                                 <table id="tabla1" class="table table-responsive">
                                     <thead>
                                         <tr>
-                                            <td id="tbl"><input type="file" id="cargar" name="cargar"></td>
+                                            <td id="tbl" colspan="3">
+                                                <input type="file" class="filestyle text-center" data-input="false">
+                                            </td>
                                         </tr>
                                     </thead>
                                     <tbody>
