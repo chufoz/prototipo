@@ -17,23 +17,28 @@ $(function ()
   		}//decisiones	   			
     }); 
 });  	
-
 function capturahashtag(idinput)
 {
  hashtag=$("input."+idinput).val();
  $("input."+idinput).val("");
  return hashtag.substring(1);
 }
-
-
 function colores( mensaje ){
-
-  if(mensaje == "alto"){
-   label = "<span id='bajo' class='label label-danger text-center'>"+mensaje+" </span>";
-
+  if(mensaje == "alto")
+  {
+   label = "<span id='alto' class='label label-danger'>"+mensaje+" </span>";
   }
-  else{
-  label = "<span id='bajo' class='label label-warning text-center'>"+mensaje+" </span>";
+  if(mensaje == "medio")
+  {
+    label = "<span id='medio' class='label label-primary'>"+mensaje+" </span>";
   }
+  if(mensaje == "critico")
+  {
+    label = "<span id='critico' class='label label-warning'>"+mensaje+" </span>";
+  }
+  if(mensaje == "bajo")
+  {
+    label = "<span id='bajo' class='label label-success'>"+mensaje+" </span>";
+  }  
   return label
 }
