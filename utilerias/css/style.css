@@ -25,7 +25,7 @@
 
 	}
 	input[type="text"]:focus{
-		border: 3px solid #428BCA; 
+		border: 2px solid #428BCA; 
 	}
 	article{
 		padding: 15px !important;
@@ -179,6 +179,9 @@
 	}
 	input#inp_log{
 		display: inline-block !important;
+		height: 37px !important;
+		border: 5px !important;
+
 	}
 	input[type="checkbox"]{
 		float: center !important;
@@ -233,3 +236,11 @@
 		margin-left: -29px !important;
 		width: 300px !important;
 	}
+	.ancho{
+		width: 100px !important;
+	}
+	#bajo, #medio, #critico, #alto{
+		padding-left: 35px;
+	}
+
+	
