@@ -28,11 +28,12 @@ function capturahashtag(idinput)
 
 function colores( mensaje ){
 
-  if(mensaje == "importante"){
-   label = "<span id='bajo' class='label label-danger'>"+mensaje+" </span>";
+  if(mensaje == "alto"){
+   label = "<span id='bajo' class='label label-danger text-center'>"+mensaje+" </span>";
+
   }
   else{
-  label = "<span id='bajo' class='label label-warning'>"+mensaje+" </span>";
+  label = "<span id='bajo' class='label label-warning text-center'>"+mensaje+" </span>";
   }
   return label
 }
