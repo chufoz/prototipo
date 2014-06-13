@@ -4302,6 +4302,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .label-primary {
   background-color: #428bca;
+  padding-left: 11px !important;
+  font-size: 14px;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
@@ -4309,6 +4311,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .label-success {
   background-color: #5cb85c;
+  padding-left: 11px !important;
+  font-size: 14px;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
@@ -4323,6 +4327,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .label-warning {
   background-color: #f0ad4e;
+  padding-left: 11px !important;
+  font-size: 14px;
 }
 .label-warning[href]:hover,
 .label-warning[href]:focus {
@@ -4330,6 +4336,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .label-danger {
   background-color: #d9534f;
+  padding-left: 11px !important;
+  font-size: 14px;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
