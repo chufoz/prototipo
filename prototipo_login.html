@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!empty($_SESSION['globales']['user']))
+{
+header("Location: vistas/prototipo3.html");  
+}//evitar muchas sessiones con una cuenta
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,27 +12,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Login</title>
   <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="../prototipo/utilerias/css/style.css">
-  <link href="../prototipo/utilerias/css/bootstrap.css" rel="stylesheet" media="screen">
-	<script type="text/javascript" src="../prototipo/utilerias/lib/jquery.js"></script>
-  <script type="text/javascript" src="../prototipo/utilerias/lib/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="utilerias/css/style.css">
+  <link href="utilerias/css/bootstrap.css" rel="stylesheet" media="screen">
+  <script type="text/javascript" src="utilerias/lib/bootstrap.js"></script>
+ <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript" src="utilerias/js/login_gear.js"></script>
 </head>
 <body>
 	<section class="container-fluid" id="contenedor">
 		  <section class="col-md-12" id="content_principal">
+        <article id="alerta">
+      <aside id="mensajes"></aside>
+    </article>
 			    <section id="cont_bor" style="background:#EEE">
 				    <section id="cont_dblbor">
 			         <article id="art_image">
-				          <img src="../prototipo/utilerias/img/logo_opt.png" alt="ICT CONSULTING">
+				          <img src="utilerias/img/logo_opt.png" alt="ICT CONSULTING">
 			         </article>
-				      <form class="form-horizontal" role="form" id="form_login">
+				      <section class="form-horizontal" role="form" id="form_login">
  					      <div class="form-group">
     						  <label for="usuario" class="col-sm-2 control-label">Usuario</label>
-      					  <input type="email" class="form-control" id="inp_log" placeholder="Ingresa Usuario" required>
+      					  <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingresa Usuario">
   				      </div>
   					    <div class="form-group">
     						  <label for="password" class="col-sm-2 control-label">Password</label>
-      					  <input type="password" class="form-control" id="inp_log" placeholder="Ingresa Password" required>
+      					  <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa Password">
     				    </div>
   					    <div class="form-group">
       						<div class="checkbox">
@@ -35,10 +46,10 @@
       						</div>
     				    </div>
   					    <div class="form-group" id="seclog">
-    						  <a href="https://support.google.com/dartsignin/answer/114767?hl=es">forgot your Login?</a>
-      					  <button type="submit" class="btn btn-primary" id="login">Sign In</button>
+    						  <a href="#">forgot your Login?</a>
+      					  <button class="btn btn-primary" id="login">Sign In</button>
     				    </div>
-				      </form>
+				      </section>
 			      </section>
 			    </section>	
 		  </section>

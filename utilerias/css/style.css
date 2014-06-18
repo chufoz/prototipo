@@ -166,6 +166,12 @@
 		-webkit-border-radius: 15px;
 		border-radius: 15px
 	}
+	#alerta {
+    	max-width: 700px;
+    	margin: 30px auto;
+    	padding-bottom: 1%;
+    	height: 30px;
+	}
 	section#cont_dblbor{
 		border:double 7px #DDD !important;
     	-moz-border-radius: 10px;
@@ -177,7 +183,12 @@
 	section#contenedor{
 		margin:200px !important;
 	}
-	input#inp_log{
+	input#usuario{
+		display: inline-block !important;
+		height: 37px !important;
+		border: 5px !important;
+	}
+	input#password, input#inp_log{
 		display: inline-block !important;
 		height: 37px !important;
 		border: 5px !important;
