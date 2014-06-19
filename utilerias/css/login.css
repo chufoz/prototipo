@@ -1,0 +1,27 @@
+ /*Prototipo Login*/
+  body{
+    background-color: #eee;
+  }
+
+  #alerta {
+      font-size: 12px;
+      height: 30px;
+  }
+
+  #logo{
+    width: 85%;
+    padding: 45px 10px 30px 10px;
+  }
+
+/*  #recordar{
+    margin-right: 80px !important; 
+  }
+  */
+  button {
+    width:100%;
+    max-width:380px;
+  }
+  #login{
+    margin-top: 15px;
+  }
+
