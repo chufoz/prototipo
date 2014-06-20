@@ -1966,7 +1966,7 @@ select[multiple].input-lg {
   background-color: #fff;
   border-radius: 5px;
   border: 2px solid #ddd;
-  margin: 200px auto 0 auto;
+  margin: 180px auto 0 auto;
   padding: 15px;
   width: 370px;
 }
@@ -5795,11 +5795,6 @@ button.close {
   }
 }
 /*Prototipo 3*/
-@media (max-width: 1170px){
-  .col-md-12{
-    width: 100%;
-  }
-}
 /*Login-Prototipo*/
 @media (max-width: 440px){
 
