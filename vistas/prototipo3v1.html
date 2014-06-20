@@ -155,7 +155,119 @@ $secure = new  AccesoSistema();
 	</section>
     </div>
 <div class="tab-pane" id="2">
-    fgbdjkfghdsjkf
+<section class="container-fluid">
+    <section class="row">
+        <section class="col-md-12">
+            <h3>Filtrado de Actividades</h3>
+            <section class="col-md-4">
+                <article class="form-group">
+                    <label>Cliente</label>
+                    <input class="form-control" placeholder="Cliente" autocomplete="on"></input>
+                </article>
+                <article class="btn-group form-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle btn-sm ancho" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>  Creador</button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Creador 1</a></li>
+                            <li><a href="#">Creador 2</a></li>
+                            <li><a href="#">Creador 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Creador 4</a></li>
+                        </ul>
+                </article>
+                <article class="btn-group form-group">
+                    <button type="button" class="btn btn-default dropdown-toggle btn-sm ancho" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Responsable</button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Creador 1</a></li>
+                            <li><a href="#">Creador 2</a></li>
+                            <li><a href="#">Creador 3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Creador 4</a></li>
+                        </ul>
+                </article>
+                <article class="form-group">
+                    <label id="prot3">Estado</label>
+                    <input class="hashtag form-control" id="prot3-1" type="text" placeholder="#Hashtag" requiered>
+                </article>
+                <article id="hashtag" class="text-center form-group">
+                </article>
+                <article class="form-group">
+                    <label id="prot3">Prioridad</label>
+                    <input class="hashtag form-control" id="prot3-1" type="text" placeholder="#Hashtag" requiered>
+                </article>
+                <article id="hashtag" class="text-center form-group">
+                </article>
+                <article class="form-group">
+                    <label>Categoria</label>
+                    <input class="form-control" placeholder="Categoria" autocomplete="on"></input>
+                </article>
+            </section>
+            <section class="col-md-4">
+                <h4>Fecha</h4>
+                <form action="" class="form-group" role="form">
+                    <section class="form-group">
+                        <label>Desde</label>
+                            <article class="input-group date Wcalendar" data-date-format="yyyy-mm-dd H:ii:ss P">
+                                <input id="cal1" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                            </article>
+                    </section>
+                </form>
+                <form action="" class="form-group" role="form">
+                    <section class="form-group">
+                        <label>Hasta</label>
+                            <article class="input-group date Wcalendar" data-date-format="yyyy-mm-dd H:ii:ss P">
+                                <input id="cal1" class="form-control" size="16" type="text" value="" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                            </article>
+                    </section>
+                </form>
+                <article class="btn-group form-group " style="align:center;">
+                    <button type="button" class="btn btn-primary text-center">Inicio</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span><span class="sr-only">Inicio</span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Fin</a></li>
+                        </ul>
+                </article>
+                <article class="form-group">
+                    <label for="vencimiento">Vencimiento </label>
+                    <input type="checkbox" name="option1" value="Si/No"> Si/No<br>
+                </article>
+            </section>
+            <section class="col-md-4 text-center">
+                <div class="form-group">
+                    <a href="#"><span class="glyphicon glyphicon glyphicon-link"></span> Supervisar Tareas Administrativas</a>
+                </div>
+                <div class="form-group">
+                    <a href="#"><span class="glyphicon glyphicon glyphicon-link"></span> Supervisar Tareas Operativas</a>
+                </div>
+                <div class="form-group">
+                    <a href="#"><span class="glyphicon glyphicon glyphicon-link"></span> Supervisar Tareas Abiertas</a>
+                </div>
+                <div class="form-group">
+                    <a href="#"><span class="glyphicon glyphicon glyphicon-link"></span> Mis Actividades</a>
+                </div>
+                <form class="form-group">
+                    <button class="btn btn-primary"><span class="glyphicon glyphicon-filter"></span>Filtrar</button>
+                    <button class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span>Limpiar</button>
+                </form>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Buscar</button>
+                 </form>
+            </section>
+        </section>
+        <section class="col-md-12" style="background: green;">
+            
+        </section>
+        
+    </section>
+</section>
+
 </div>
 </div>
 </div>
