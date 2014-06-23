@@ -5795,6 +5795,17 @@ button.close {
   }
 }
 /*Prototipo 3*/
+@media (max-width: 991px) {
+.table-responsive {
+width: 98%;
+margin-top: 40px;
+overflow-x: scroll;
+overflow-y: hidden;
+-webkit-overflow-scrolling: touch;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+border: 1px solid #ddd;
+}
+
 /*Login-Prototipo*/
 @media (max-width: 440px){
 

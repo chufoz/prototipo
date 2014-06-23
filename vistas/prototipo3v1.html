@@ -35,24 +35,25 @@ $secure = new  AccesoSistema();
 	<section class="container-fluid">
 		<section class="row">
             <section class="col-md-12">
-			<section class="col-md-4">
-				<article class="form-group" id="art1">
-                    <label id="prot3">Empresa</label>
-                    <input class="form-control" id="prot3" type="text" autocomplete="on" placeholder="Ingresa una Empresa" requiered>
-                    <label id="prot3">Asunto</label>
-                    <textarea class="form-control" id="asunto" name="asunto" placeholder="Agregar Asunto..."></textarea>
-                </article>
-                	<article class="btn-group">
-                        <button type="button" class="btn btn-primary dropdown-toggle btn-sm ancho" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>  Propietario</button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Nombre 1</a></li>
-                                <li><a href="#">Nombre 2</a></li>
-                                <li><a href="#">Nombre 3</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Nombre 4</a></li>
-                            </ul>
+			    <section class="col-md-4">
+				    <article class="form-group" id="art1">
+                        <label id="prot3">Empresa</label>
+                        <input class="form-control" id="prot3" type="text" autocomplete="on" placeholder="Ingresa una Empresa" requiered>
+                        <label id="prot3">Asunto</label>
+                        <textarea class="form-control" id="asunto" name="asunto" placeholder="Agregar Asunto..."></textarea>
                     </article>
-                    	<article class="btn-group">
+                    <article class="text-center">
+                	   <article class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm ancho" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>  Propietario</button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Nombre 1</a></li>
+                                    <li><a href="#">Nombre 2</a></li>
+                                    <li><a href="#">Nombre 3</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Nombre 4</a></li>
+                                </ul>
+                        </article>
+                        <article class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle btn-sm ancho" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Asignado       </button>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="#">Nombre 1</a></li>
@@ -62,13 +63,14 @@ $secure = new  AccesoSistema();
                                     <li><a href="#">Nombre 4</a></li>
                                 </ul>
                         </article>
-                    	<article class="form-group" id="art1">
-                            <label id="prot3">Etiqueta</label>
-                            <input class="hashtag form-control" id="prot3-1" type="text" placeholder="Hashtag" requiered>
-                        </article>
-                        <article id="hashtag" class="text-center form-group">
-                        </article>
-                        <article id="clickme form-group">
+                    </article>
+                    <article class="form-group" id="art1">
+                        <label id="prot3">Etiqueta</label>
+                        <input class="hashtag form-control" id="prot3-1" type="text" placeholder="Hashtag" requiered>
+                    </article>
+                    <article id="hashtag" class="text-center form-group">
+                    </article>
+                    <article id="clickme form-group">
                         <h4 id="presioname" class="text-left form-control btn-primary"> [+] Opciones Avanzadas... </h4>
                             <article id="art2pr4" class="toggle table-responsive" style="display: none;">
                                 <table id="tabla1" class="table table-hover">
@@ -95,8 +97,8 @@ $secure = new  AccesoSistema();
                             </article>   
                     </article>
                     <article id="art2pr3" class="form-group">
-                    <button class="btn btn-primary form-control" id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
-                </article>
+                        <button class="btn btn-primary form-control" id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
+                    </article>
 			</section>
   			<section class="col-md-4">
   				<form action="" class="form-group" role="form">
@@ -158,12 +160,13 @@ $secure = new  AccesoSistema();
 <section class="container-fluid">
     <section class="row">
         <section class="col-md-12">
-            <h3>Filtrado de Actividades</h3>
+            <h3>Filtro de Actividades</h3>
             <section class="col-md-4">
                 <article class="form-group">
                     <label>Cliente</label>
                     <input class="form-control" placeholder="Cliente" autocomplete="on"></input>
                 </article>
+                <article class="text-center">
                 <article class="btn-group form-group">
                     <button type="button" class="btn btn-primary dropdown-toggle btn-sm ancho" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>  Creador</button>
                         <ul class="dropdown-menu" role="menu">
@@ -183,6 +186,7 @@ $secure = new  AccesoSistema();
                             <li class="divider"></li>
                             <li><a href="#">Creador 4</a></li>
                         </ul>
+                </article>
                 </article>
                 <article class="form-group">
                     <label id="prot3">Estado</label>
@@ -223,7 +227,8 @@ $secure = new  AccesoSistema();
                             </article>
                     </section>
                 </form>
-                <article class="btn-group form-group " style="align:center;">
+                <article class="text-center">
+                <article class="btn-group form-group" style="align:center;">
                     <button type="button" class="btn btn-primary text-center">Inicio</button>
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span><span class="sr-only">Inicio</span></button>
                         <ul class="dropdown-menu" role="menu">
@@ -234,6 +239,7 @@ $secure = new  AccesoSistema();
                 <article class="form-group">
                     <label for="vencimiento">Vencimiento </label>
                     <input type="checkbox" name="option1" value="Si/No"> Si/No<br>
+                </article>
                 </article>
             </section>
             <section class="col-md-4 text-center">
@@ -255,14 +261,57 @@ $secure = new  AccesoSistema();
                 </form>
                 <form class="navbar-form navbar-left" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control buscar" placeholder="Search">
                     </div>
-                    <button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>Buscar</button>
+                    <button class="btn btn-primary btn-buscar"><span class="glyphicon glyphicon-search"></span>Buscar</button>
                  </form>
             </section>
         </section>
-        <section class="col-md-12" style="background: green;">
-            
+        <section class="col-md-12">
+            <article class="form-group table-responsive text-center">
+                <table id="tabla" class="table text-left table-hover">
+                    <thead>
+                        <tr>
+                            <th id="tbl">ID</th>
+                            <th id="tbl">Cliente</th>
+                            <th id="tbl">Creador</th>
+                            <th id="tbl">Responsable</th>
+                            <th id="tbl">Estado</th>
+                            <th id="tbl">Prioridad</th>
+                            <th id="tbl">Categoria</th>
+                            <th id="tbl">Creacion</th>
+                            <th id="tbl">Vencimiento</th>
+                            <th id="tbl">Edad/Duracion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                            <td id="tbl">contenido1</td>
+                        </tr>
+                        <tr>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                            <td id="tbl">contenido2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
         </section>
         
     </section>
