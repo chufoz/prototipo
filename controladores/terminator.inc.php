@@ -12,14 +12,13 @@ class T800 extends ConexionMysql
     
         protected function verificarAcceso() 
         {
-            parent::ejecutaConsultas("SELECT usuario_identificacion as user ,password_identificacion as pass , candado_identificacion as candado ,fecha_identificacion as hash from jc_identificaciones
-                                  where usuario_identificacion = '$this->_USUARIO'"); 
+            parent::ejecutaConsultas("SELECT name as user, password as pass, 1 auth, active as candado, id as id FROM CRMloginusers WHERE name ='$this->_USUARIO'"); 
             $identificacion = $this->_QUERY->fetch();//obtenemos el arreglo de las identificaciones
                 if ($identificacion)
                 { //existe un registro
-                    if($identificacion['candado']!=0)
+                    if($identificacion['candado']!='no')
                       {//verificar si el usuario esta deshabilitado 
-                         $acceso = (strcmp($identificacion['pass'],$this->seguridadPassword($this->_PASSWORD,$identificacion['hash'],1))==0) ? 1 : "2#<strong>Precaución ! </strong>El password que ha proporcionado es incorrecto"; /*si es 1 si es el password si es 0  no es password*/                       }
+                         $acceso = (strcmp($identificacion['pass'],$this->seguridadPassword($this->_PASSWORD,null,5))==0) ? 1 : "2#<strong>Precaución ! </strong>El password que ha proporcionado es incorrecto"; /*si es 1 si es el password si es 0  no es password*/                       }
                       else
                           {
                           $acceso="3#<strong>Alerta !</strong>El usuario esta deshabilitado por el sistema";
@@ -32,6 +31,13 @@ class T800 extends ConexionMysql
             return $acceso;
         } // funcion que valida los datos del usuario para que pueda acceder ala aplicación
         
+        private function mysqlPassword($password,$type="OLD_PASSWORD")//existe PASSWORD y OLDPASSWORD por dafaul elejimos la segunda
+        {
+         parent::ejecutaConsultas("SELECT $type('$password') as passcrm");
+         $clave = $this->_QUERY->fetch();
+         return $clave['passcrm'];  
+        }
+
      public function seguridadPassword($password,$datetime,$type)
         {
          switch ($type)
@@ -48,6 +54,10 @@ class T800 extends ConexionMysql
             case 4:
                     $encryp=$this->decrypt($password,$datetime);
                     break;
+            case 5:
+                    $encryp = $this->mysqlPassword($password);
+                    break;
+
          }
          return $encryp;
         }//fin de la funcion encriptaPassword

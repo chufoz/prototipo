@@ -1,7 +1,8 @@
 <?php
-include_once '../modelos/conector_mysql.inc.php';
 require_once '../controladores/controlador_entidad.php';
+require_once '../controladores/seguridad.class.php';
 $controlador = new controladorentidad(); 
+$terminator = new AccesoSistema();
  ?>
 <!DOCTYPE html>
 <html>
@@ -22,8 +23,9 @@ $controlador = new controladorentidad();
     		</tr>
 		</thead>
   		<tbody> 
-  			<?php echo $controlador->pruebaconsulta(); ?>
+  			<?php echo $controlador->pruebaconsulta();?>
 		</tbody>
+
 	</table>
 </section>	
 </body>
