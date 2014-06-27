@@ -35,6 +35,7 @@ $secure = new  AccesoSistema();
 	<section class="container-fluid">
 		<section class="row">
             <section class="col-md-12">
+                <h3>Añadir</h3>
 			    <section class="col-md-4">
 				    <article class="form-group" id="art1">
                         <label id="prot3">Empresa</label>
@@ -66,28 +67,28 @@ $secure = new  AccesoSistema();
                     </article>
                     <article class="form-group" id="art1">
                         <label id="prot3">Etiqueta</label>
-                        <input class="hashtag form-control" id="prot3-1" type="text" placeholder="Hashtag" requiered>
+                        <input class="hashtag form-control" id="prot3-1" type="text" placeholder="#Hashtag" requiered>
                     </article>
                     <article id="hashtag" class="text-center form-group">
                     </article>
                     <article id="clickme form-group">
-                        <h4 id="presioname" class="text-left form-control btn-primary"> [+] Opciones Avanzadas... </h4>
+                        <h4 id="presioname" class="text-left form-control btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Opciones Avanzadas... </h4>
                             <article id="art2pr4" class="toggle table-responsive" style="display: none;">
-                                <table id="tabla1" class="table table-hover">
+                                <table class="table table-hover">
                                     <thead>
                                         <tr>
                                             <td id="tbl" colspan="3">
-                                                <input type="file" class="filestyle form-control" data-input="false">
+                                                <input type="file" class="filestyle" data-input="false">
                                             </td>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr style="font-size: 11px;">
                                             <td><input type="checkbox" name="check" value="borrar">Delated Entity</td>
                                             <td><input type="checkbox" name="check" value="leer">Read-Only to Other Users</td>
                                             <td><input type="checkbox" name="check" value="privado">Private</td>
                                         </tr>
-                                        <tr>
+                                        <tr style="font-size: 11px;">
                                             <td><input type="radio" name="radio" value="alta">Alta</td>
                                             <td><input type="radio" name="radio" value="media">Media</td>
                                             <td><input type="radio" name="radio" value="ninguna">Ninguna</td>
@@ -97,7 +98,7 @@ $secure = new  AccesoSistema();
                             </article>   
                     </article>
                     <article id="art2pr3" class="form-group">
-                        <button class="btn btn-primary form-control" id="guardar" name="guardar" type="submit">Guaradar en Base de Datos</button>
+                        <button class="btn btn-primary form-control" id="guardar" name="guardar" type="submit"><span class="glyphicon glyphicon-floppy-disk"></span> Guaradar en Base de Datos</button>
                     </article>
 			</section>
   			<section class="col-md-4">
@@ -164,7 +165,7 @@ $secure = new  AccesoSistema();
             <section class="col-md-4">
                 <article class="form-group">
                     <label>Cliente</label>
-                    <input class="form-control" placeholder="Cliente" autocomplete="on"></input>
+                    <input class="form-control" placeholder="Cliente" autocomplete="on">
                 </article>
                 <article class="text-center">
                 <article class="btn-group form-group">
@@ -202,7 +203,7 @@ $secure = new  AccesoSistema();
                 </article>
                 <article class="form-group">
                     <label>Categoria</label>
-                    <input class="form-control" placeholder="Categoria" autocomplete="on"></input>
+                    <input class="form-control" placeholder="Categoria" autocomplete="on">
                 </article>
             </section>
             <section class="col-md-4">
@@ -229,9 +230,8 @@ $secure = new  AccesoSistema();
                 </form>
                 <article class="text-center">
                 <article class="btn-group form-group" style="align:center;">
-                    <button type="button" class="btn btn-primary text-center">Inicio</button>
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span><span class="sr-only">Inicio</span></button>
-                        <ul class="dropdown-menu" role="menu">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Inicio <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
                             <li><a href="#">Inicio</a></li>
                             <li><a href="#">Fin</a></li>
                         </ul>
@@ -242,7 +242,7 @@ $secure = new  AccesoSistema();
                 </article>
                 </article>
             </section>
-            <section class="col-md-4 text-center">
+            <section class="col-md-4">
                 <div class="form-group">
                     <a href="#"><span class="glyphicon glyphicon glyphicon-link"></span> Supervisar Tareas Administrativas</a>
                 </div>
@@ -255,7 +255,7 @@ $secure = new  AccesoSistema();
                 <div class="form-group">
                     <a href="#"><span class="glyphicon glyphicon glyphicon-link"></span> Mis Actividades</a>
                 </div>
-                <form class="form-group">
+                <form class="form-group text-center">
                     <button class="btn btn-primary"><span class="glyphicon glyphicon-filter"></span>Filtrar</button>
                     <button class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span>Limpiar</button>
                 </form>
@@ -313,10 +313,8 @@ $secure = new  AccesoSistema();
                 </table>
             </article>
         </section>
-        
     </section>
 </section>
-
 </div>
 </div>
 </div>

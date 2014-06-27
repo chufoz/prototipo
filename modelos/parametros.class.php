@@ -3,11 +3,11 @@
 abstract class ParametrosConexion
 {
 /* -----------Variables de conexion----------------------------> */ 
-    private $_USUARIO = "root";
-    private $_PASSWORD = "";
+    private $_USUARIO = "crmuser";
+    private $_PASSWORD = "crmuser";
     private $_PUERTO="3306";
-    private $_BD="bd_eqgg";
-    private $_SERVIDOR="localhost";
+    private $_BD="crmdb";
+    private $_SERVIDOR="192.168.0.21";
 
     protected function ParametrosConexion()
         { 
