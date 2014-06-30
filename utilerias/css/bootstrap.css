@@ -5798,12 +5798,23 @@ button.close {
 @media (max-width: 991px) {
 .table-responsive {
 width: 98%;
-margin-top: 40px;
+margin-top: 50px;
 overflow-x: scroll;
 overflow-y: hidden;
 -webkit-overflow-scrolling: touch;
 -ms-overflow-style: -ms-autohiding-scrollbar;
 border: 1px solid #ddd;
+}
+}
+@media (max-width: 1199px) {
+.table-responsive {
+width: 98%;
+overflow-x: scroll;
+overflow-y: hidden;
+-webkit-overflow-scrolling: touch;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+border: 1px solid #ddd;
+}
 }
 @media(max-width: 290px){
   .btn{
@@ -5811,7 +5822,12 @@ border: 1px solid #ddd;
     font-size: 9px;
   }
 }
-
+@media (max-width: 985px){
+  .row{
+      width: 100%;
+      margin: -1% !important;
+  }
+}
 
 /*Login-Prototipo*/
 @media (max-width: 440px){

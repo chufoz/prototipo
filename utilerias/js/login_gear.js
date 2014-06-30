@@ -16,7 +16,7 @@ $(function()
           switch(caso){
             case 1:
               mostrarMensajes("alert alert-success","A su puta madre si entre :D");
-              setTimeout(location.href="vistas/prototipo3v1.html",167761);
+              setTimeout(location.href="index.php",167761);
             break;
             case 2:
               mostrarMensajes("alert alert-warning", mensajes[1]);
