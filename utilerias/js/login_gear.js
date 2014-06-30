@@ -15,8 +15,8 @@ $(function()
           caso = parseInt(mensajes[0]);
           switch(caso){
             case 1:
-              mostrarMensajes("alert alert-success","A su puta madre si entre :D");
-              setTimeout(location.href="vistas/prototipo3v2.html",167761);
+              mostrarMensajes("alert alert-success","Credenciales correctas, redireccionando al sistema");
+              setTimeout(location.href="vistas/principal.php",167761);
             break;
             case 2:
               mostrarMensajes("alert alert-warning", mensajes[1]);

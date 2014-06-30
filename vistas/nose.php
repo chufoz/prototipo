@@ -1,18 +1,16 @@
 <?php
 session_start();
-require_once'../controladores/seguridad.class.php';
-$secure = new  AccesoSistema();
+var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>PROTOTIPO3.v3</title>
+	<title>PROTOTIPO3.v1</title>
 	<link rel="shortcut icon" href="../logo.ico" type="image/x-icon" />
 	<link href="../utilerias/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="../utilerias/css/prototipo3v2.css" rel="stylesheet" media="screen">
+    <link href="../utilerias/css/prototipo3v1.css" rel="stylesheet" media="screen">
 	<link href="../utilerias/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="../utilerias/css/datetimepicker.css" rel="stylesheet" media="screen">
 	<script type="text/javascript" src="../utilerias/lib/jquery.js"></script>
@@ -26,49 +24,19 @@ $secure = new  AccesoSistema();
 </head>
 <body>
 <section class="container">
-	<section class="col-md-12" id="todo">
-		<section class="col-md-2 text-left">
-	<div class="tabbable">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#1" data-toggle="tab">Principal</a></li>
-        <li><a href="#2" data-toggle="tab">Clave de Acceso</a></li>
-        <li><a href="#3" data-toggle="tab">Reportes</a></li>
-        <li><a href="#4" data-toggle="tab">Plantillas</a></li>
-        <li><a href="#5" data-toggle="tab">Dashboard</a></li>
-        <li><a href="#6" data-toggle="tab">Añadir</a></li>
-        <li><a href="#7" data-toggle="tab">Actividades</a></li>
-        <li><a href="#8" data-toggle="tab">Clientes</a></li>
-        <li><a href="#9" data-toggle="tab">CSV</a></li>
-        <li><a href="#10" data-toggle="tab">TEL</a></li>
-        <li><a href="#11" data-toggle="tab">Resumen</a></li>
-        <li><a href="#12" data-toggle="tab">Salir</a></li>
+    <div class="tabbable">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#1" data-toggle="tab">PROTOTIPO 1v1 Añadir</a></li>
+        <li><a href="#2" data-toggle="tab">PROTOTIPO 1v1 Actividades</a></li>
     </ul>
-    </section>
-    <section class="col-md-10">
 <div class="tab-content">
-	<div class="tab-pane active" id="1">
-		<h3>Esta es la vista Principal</h3>
-	</div>
-	<div class="tab-pane" id="2">
-		<h3>Esta es la vista Clave de Acceso</h3>
-	</div>
-	<div class="tab-pane" id="3">
-		<h3>Esta es la vista Reportes</h3>
-	</div>
-	<div class="tab-pane" id="4">
-		<h3>Esta es la vista Plantillas</h3>
-	</div>
-	<div class="tab-pane" id="5">
-		<h3>Esta es la vista Dashboard</h3>
-	</div>
-    
-<div class="tab-pane" id="6">
+<div class="tab-pane active" id="1">
 	<section class="container-fluid">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3>Añadir</h3>
-  <section class="col-sm-4">
-	<article class="form-group" id="art1">
+		<section class="row">
+            <section class="col-md-12">
+                <h3>Añadir</h3>
+			    <section class="col-md-4">
+				    <article class="form-group" id="art1">
                         <label id="prot3">Empresa</label>
                         <input class="form-control" id="prot3" type="text" autocomplete="on" placeholder="Ingresa una Empresa" requiered>
                         <label id="prot3">Asunto</label>
@@ -129,12 +97,11 @@ $secure = new  AccesoSistema();
                             </article>   
                     </article>
                     <article id="art2pr3" class="form-group">
-                        <button class="btn btn-primary form-control" id="guardar" name="guardar" type="submit"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar en Base de Datos</button>
+                        <button class="btn btn-primary form-control" id="guardar" name="guardar" type="submit"><span class="glyphicon glyphicon-floppy-disk"></span> Guaradar en Base de Datos</button>
                     </article>
-
-  </section>
-  <section class="col-sm-4">
-  	<form action="" class="form-group" role="form">
+			</section>
+  			<section class="col-md-4">
+  				<form action="" class="form-group" role="form">
                     <section class="form-group">
                         <label>Calendarizar</label>
                             <article class="input-group date Wcalendar" data-date-format="yyyy-mm-dd H:ii:ss P">
@@ -158,9 +125,9 @@ $secure = new  AccesoSistema();
                             </article>
                     </section>
                 </form>
-  </section>
-  <section class="col-sm-4">
-  	<article class="form-group text-center table-responsive">
+  			</section>
+  			<section class="col-md-4">
+  				<article class="form-group text-center table-responsive">
   					<label><h4>Lista de Actividades</h4></label>
                 <table id="tabla" class="table text-left table-hover">
                     <thead>
@@ -184,12 +151,12 @@ $secure = new  AccesoSistema();
                     </tbody>
                 </table>
   				</article>
-  </section>
-        </div>
-        </div>
+  			</section>
+		</section>
         </section>
+	</section>
     </div>
-<div class="tab-pane" id="7">
+<div class="tab-pane" id="2">
 <section class="container-fluid">
     <section class="row">
         <section class="col-md-12">
@@ -348,25 +315,8 @@ $secure = new  AccesoSistema();
     </section>
 </section>
 </div>
-<div class="tab-pane" id="8">
-		<h3>Esta es la vista de Clientes</h3>
-	</div>
-	<div class="tab-pane" id="9">
-		<h3>Esta es la vista CSV</h3>
-	</div>
-	<div class="tab-pane" id="10">
-		<h3>Esta es la vista de busqueda de TEL</h3>
-	</div>
-	<div class="tab-pane" id="11">
-		<h3>Esta es la vista de Resumen</h3>
-	</div>
-	<div class="tab-pane" id="12">
-		<h3>Salir del CRM</h3>
-	</div>
 </div>
-</section>
 </div>
-</section>
 </section>
 </body>
 </html>
