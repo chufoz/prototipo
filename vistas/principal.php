@@ -1,7 +1,8 @@
 <?php
 session_start();
-require_once'../controladores/seguridad.class.php';
-$secure = new  AccesoSistema();
+var_dump($_SESSION);
+include_once '../controladores/controlador_entidad.php';
+$entidad = new Entidades_Tareas()
 ?>
 <!DOCTYPE html>
 <html>
@@ -218,21 +219,14 @@ $secure = new  AccesoSistema();
                     <thead>
                         <tr>
                             <th id="tbl">Actividades</th>
-                            <th id="tbl">Calendarizar</th>
-                            <th id="tbl">Recuerdame</th>
+                            <th id="tbl">Empesa</th>
+                            <th id="tbl">Finalizacion</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td id="tbl">contenido1</td>
-                            <td id="tbl">contenido1</td>
-                            <td id="tbl">contenido1</td>
-                        </tr>
-                        <tr>
-                            <td id="tbl">contenido2</td>
-                            <td id="tbl">contenido2</td>
-                            <td id="tbl">contenido2</td>
-                        </tr>
+                       <?php
+                       echo $entidad->listaActividades($_SESSION['globales']['clave'])
+                       ?>
                     </tbody>
                 </table>
   				</article>

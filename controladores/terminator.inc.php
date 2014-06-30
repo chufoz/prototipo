@@ -30,13 +30,6 @@ class T800 extends ConexionMysql
                     }  
             return $acceso;
         } // funcion que valida los datos del usuario para que pueda acceder ala aplicación
-        
-        private function mysqlPassword($password,$type="OLD_PASSWORD")//existe PASSWORD y OLDPASSWORD por dafaul elejimos la segunda
-        {
-         parent::ejecutaConsultas("SELECT $type('$password') as passcrm");
-         $clave = $this->_QUERY->fetch();
-         return $clave['passcrm'];  
-        }
 
      public function seguridadPassword($password,$datetime,$type)
         {
@@ -121,7 +114,7 @@ class T800 extends ConexionMysql
         protected function setsessionGlobals($usuario)
         {
             $sesiones= array();//crea las sesiones
-            parent::ejecutaConsultas("select pk_id_identificacion as clave , usuario_identificacion as user , fecha_identificacion as hash from jc_identificaciones where usuario_identificacion ='$usuario';");
+            parent::ejecutaConsultas("SELECT id as clave, name as user , FULLNAME as hash FROM crmdb.CRMloginusers where name ='$usuario';");
             $datos = $this->_QUERY->fetch();
             $sesiones['clave']=$datos['clave'];//el pk para todo el sistema
             $sesiones['user']=$datos['user'];//el user para todo el sistema
@@ -129,13 +122,21 @@ class T800 extends ConexionMysql
             return $sesiones;
         }//fin de genera sesiones
 
-        private function encrypt($input,$Key) {
+        private function encrypt($input,$Key)
+        {
             $output = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($Key), $input, MCRYPT_MODE_CBC, md5(md5($Key))));
-                return $output;
+            return $output;
         }
-        private function decrypt($input,$Key) {
+        private function decrypt($input,$Key)
+        {
             $output = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($Key), base64_decode($input), MCRYPT_MODE_CBC, md5(md5($Key))), "\0");
-                return $output;
-    }
+            return $output;
+        }
+        private function mysqlPassword($password,$type="OLD_PASSWORD")//existe PASSWORD y OLDPASSWORD por dafaul elejimos la segunda
+        {
+         parent::ejecutaConsultas("SELECT $type('$password') as passcrm");
+         $clave = $this->_QUERY->fetch();
+         return $clave['passcrm'];  
+        }
 
 }//fin de la clase

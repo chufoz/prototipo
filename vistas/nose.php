@@ -1,7 +1,6 @@
 <?php
 session_start();
-require_once'../controladores/seguridad.class.php';
-$secure = new  AccesoSistema();
+var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html>
