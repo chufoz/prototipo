@@ -32,7 +32,7 @@ $entidad = new Entidades_Tareas()
 	<div class="tabbable">
     <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#1" data-toggle="tab"><span class="glyphicon glyphicon-home"></span> Principal</a></li>
-        <li><a href="clave_acceso.php/#2" data-toggle="tab"><span class="glyphicon glyphicon-qrcode"></span> Clave de Acceso</a></li>
+        <li><a href="clave_acceso.php" data-toggle="tab"><span class="glyphicon glyphicon-qrcode"></span> Clave de Acceso</a></li>
         <li><a href="reportes.php" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span> Reportes</a></li>
         <li><a href="#4" data-toggle="tab"><span class="glyphicon glyphicon-file"></span> Plantillas</a></li>
         <li><a href="#5" data-toggle="tab"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
@@ -96,7 +96,56 @@ $entidad = new Entidades_Tareas()
                                 </tr>
                             </tbody>
                         </table>  
-                    </article>   
+                    </article>
+                    <article class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <td id="tbl" colspan="3" class="text-center">Calendario</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="tbl">calendario1</td>
+                                    <td id="tbl">calendario2</td>
+                                    <td id="tbl">calendario3</td>
+                                </tr>
+                                <tr>
+                                    <td id="tbl">calendario1</td>
+                                    <td id="tbl">calendario2</td>
+                                    <td id="tbl">calendario3</td>
+                                </tr>
+                                <tr>
+                                    <td id="tbl">calendario1</td>
+                                    <td id="tbl">calendario2</td>
+                                    <td id="tbl">calendario3</td>
+                                </tr>
+                            </tbody>
+                        </table>  
+                    </article>
+                    <article class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <td id="tbl" colspan="3" class="text-center">Administración</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="tbl">contenido1</td>
+                                    <td id="tbl">contenido2</td>
+                                </tr>
+                                <tr>
+                                    <td id="tbl">contenido1</td>
+                                    <td id="tbl">contenido2</td>
+                                </tr>
+                                <tr>
+                                    <td id="tbl">contenido1</td>
+                                    <td id="tbl">contenido2</td>
+                                </tr>
+                            </tbody>
+                        </table>  
+                    </article>      
                 </div>
             </div>
 	    </section>
