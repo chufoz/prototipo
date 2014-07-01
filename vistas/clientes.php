@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="tab-pane" id="8">
-        <section class="container-fluid" id="clave_acceso">
+        <section class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
 		            <h3>Esta es la vista de clientes</h3>

@@ -4,7 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Anadir</title>
-    <link rel="stylesheet" href="">
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon" />
+    <link href="../utilerias/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../utilerias/css/prototipo3v2.css" rel="stylesheet" media="screen">
+    <link href="../utilerias/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../utilerias/css/datetimepicker.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="../utilerias/lib/jquery.js"></script>
+    <script type="text/javascript" src="../utilerias/lib/bootstrap.js"></script>
+    <script type="text/javascript" src="../utilerias/lib/datetimepicker.js"></script>
+    <script type="text/javascript" src="../utilerias/lib/bootstrap-filestyle.js"></script>
+    <script src="../utilerias/js/widgetcalendario.js" type="text/javascript"></script>
+    <script src="../utilerias/js/bootstrap-collapse.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../utilerias/fonts/"></script>
+    <script src="../utilerias/js/gearhastag.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="tab-pane" id="6">
